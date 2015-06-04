@@ -1,0 +1,20 @@
+gfx: dungeonGreen
+backdrop: defaultBd
+minimap: 5,3
+
+door: d2_6, EDGE_TOP_TO_BOTTOM(0,0);
+door: d2_8, EDGE_TOP_TO_BOTTOM(1,0);
+
+
+enemy: TT(14,5),ogre,ITEM_MEAT,0;
+enemy: TT(16,6),ogre,ITEM_MEAT,0;
+enemy: TT(8,5),ogre,ITEM_MEAT,0;
+
+enemy: TT(6,4),map_object,0,OBJ_BONES1;
+enemy: TT(6,5),map_object,0,OBJ_BONES2;
+enemy: TT(5,5),map_object,0,OBJ_SKULL1;
+
+enemy: TT(21,3),map_object,0,OBJ_BONES3;
+enemy: TT(22,3),map_object,0,OBJ_BONES4;
+enemy: TT(22,4),map_object,0,OBJ_SKULL2;
+

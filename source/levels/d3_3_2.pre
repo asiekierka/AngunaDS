@@ -1,0 +1,3 @@
+enemy: TT(0,7),door,DOOR_VERTICAL_L | DOOR_HIDDEN | DOOR_TOGGLE(1),0;
+enemy: TT(3,3),switch,SWITCH_TOGGLE(1);
+

@@ -1,0 +1,8 @@
+gfx: cave
+door: cave_602, LEFTEDGE_TO(T(7));
+dark: 1
+
+enemy: EERAND(3,2),purpleSlime,ITEM_RANDOM_1,0;
+
+enemy: T(3),T(2),item,ITEM_KEY_RED,ITEM_REWARD | ITEM_SAVES | 53;
+

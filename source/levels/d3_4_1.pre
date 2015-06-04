@@ -1,0 +1,6 @@
+enemy: TT(4,1),ogre,ITEM_RANDOM_1,0;
+enemy: TT(7,3),ogre,ITEM_RANDOM_1,0;
+enemy: TT(10,7),ogre,ITEM_RANDOM_1,0;
+
+#enemy: TT(14,4),door,DOOR_VERTICAL_L | DOOR_HIDDEN | DOOR_TOGGLE(2) | DOOR_TOGGLE_FLIP,0;
+

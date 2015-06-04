@@ -1,0 +1,15 @@
+gfx: cave
+door: cave_502, BOTTOM_TO_CAVE(13,1);
+enemy: T(3),T(2),map_object,0,OBJ_SKULL1;
+enemy: T(3),T(3),map_object,0,OBJ_BONES1;
+
+enemy: T(1),T(5),map_object,ITEM_RANDOM_1,OBJ_POT1;
+enemy: T(2),T(6),map_object,ITEM_RANDOM_1,OBJ_CRATE1;
+enemy: T(1),T(6),map_object,ITEM_RANDOM_1,OBJ_CRATE2;
+
+enemy: T(7),T(1),map_object,0,OBJ_POT_DUMP1;
+enemy: T(8),T(1),map_object,0,OBJ_POT_DUMP2;
+
+enemy: TT(2,1),map_object,ITEM_LIFE_UP|ENEMY_SAVES|ENEMY_SAVE_SLOT(52),OBJ_POT2;
+
+dark: 1

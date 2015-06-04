@@ -1,0 +1,17 @@
+gfx: dungeonGreen
+backdrop: defaultBd
+minimap: 3,3
+
+door: d2_1, BOTTOMEDGE;
+
+door: d2_2,   EDGE_LEFT_TO_RIGHT(0,0);
+door: d2_3,   EDGE_RIGHT_TO_LEFT(0,0);
+door: d2_5,   EDGE_TOP_TO_BOTTOM(0,1);
+
+enemy: TT(2,2),ogre,ITEM_MEAT|ENEMY_SAVES|ENEMY_SAVE_SLOT(10),0;
+enemy: TT(12,2),zipper,ITEM_MEAT|ENEMY_SAVES|ENEMY_SAVE_SLOT(11),0;
+enemy: TT(7,3),item,ITEM_ATTACK_UP, ITEM_SAVES | 78;
+
+enemy: TT(7,6),door,DOOR_HORIZONTAL,ITEM_REWARD;
+
+

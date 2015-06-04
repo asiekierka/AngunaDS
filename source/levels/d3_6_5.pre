@@ -1,0 +1,5 @@
+enemy: TT(0,4),door,DOOR_VERTICAL_L | DOOR_HIDDEN, DOOR_APPEARS_BEFORE;
+
+enemy: EERAND(1,1),ogre,ITEM_RANDOM_1,0;
+enemy: EERAND(2,2),ogre,ITEM_RANDOM_1,0;
+enemy: EERAND(2,2),ogre,ITEM_RANDOM_1,0;

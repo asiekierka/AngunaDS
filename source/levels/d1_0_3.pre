@@ -1,0 +1,11 @@
+gfx: zone1
+backdrop: defaultBd
+minimap: 0,0
+door: d1_0_2, TOPEDGE;
+door: ovr_4_2, BOTTOM_TO_CAVE(10,1);
+enemy: L(14),L(17),crockyBody,ENEMY_SAVES|ENEMY_SAVE_SLOT(13),0;
+enemy: L(14),L(13)-4,crockyHead,ENEMY_SAVES|ENEMY_SAVE_SLOT(13),0;
+enemy: L(14),L(13)+5,crockyNeck,ENEMY_SAVES|ENEMY_SAVE_SLOT(13),0;
+enemy: L(14),L(13),crockyNeck,ENEMY_SAVES|ENEMY_SAVE_SLOT(13),0;
+enemy: T(7),T(9),door,DOOR_HORIZONTAL,ITEM_REWARD | DOOR_APPEARS_AFTER;
+enemy: TT(7,4),item,ITEM_KEY_YELLOW,ITEM_REWARD | ITEM_SAVES | 79;

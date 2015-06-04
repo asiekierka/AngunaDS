@@ -1,0 +1,4 @@
+
+enemy: TT(6,6),shieldHobgoblin,0,0;
+door: cave_9,CAVE_TO_EDGE_BOTTOM_X(12,0,3);
+

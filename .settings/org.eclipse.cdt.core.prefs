@@ -1,0 +1,4 @@
+#Tue Jun 17 22:53:38 CDT 2008
+eclipse.preferences.version=1
+environment/project/cdt.managedbuild.config.gnu.exe.debug.211537323=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?>\n<environment append\="true" appendContributed\="true">\n<variable delimiter\=";" name\="DEVKITARM" operation\="append" value\="/home/tolbert/tools/devkitPro/devkitARM"/>\n<variable delimiter\=";" name\="DEVKITPRO" operation\="replace" value\="/home/tolbert/tools/devkitPro"/>\n</environment>\n
+environment/project/cdt.managedbuild.config.gnu.exe.release.627452509=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?>\n<environment append\="true" appendContributed\="true">\n<variable delimiter\=";" name\="DEVKITARM" operation\="append" value\="/home/tolbert/tools/devkitPro/devkitARM"/>\n</environment>\n

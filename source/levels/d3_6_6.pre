@@ -1,0 +1,2 @@
+enemy: TT(7,5),switch,SWITCH_TOGGLE(1),ITEM_REWARD;
+enemy: EERAND(7,5),slime,0,0;

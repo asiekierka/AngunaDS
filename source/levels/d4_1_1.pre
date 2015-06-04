@@ -1,0 +1,7 @@
+enemy:  TT(14,4),door,DOOR_VERTICAL_R | DOOR_HIDDEN,0;
+enemy:  TT(7,1),door,DOOR_HORIZONTAL | DOOR_HIDDEN,0;
+enemy:  TT(7,9),door,DOOR_HORIZONTAL | DOOR_HIDDEN,0;
+
+stairs:  2,0,d4_4_1,17,3,UP;
+
+dark: 1

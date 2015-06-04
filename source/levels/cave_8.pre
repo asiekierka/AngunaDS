@@ -1,0 +1,5 @@
+gfx: cave
+door: cave_801, BOTTOM_TO_CAVE(4,2);
+door: ovr_3_3, CAVE_TO_CAVE(13,6,7,10);
+enemy: TT(3,7),ogre,ITEM_POTION|ENEMY_SAVES|ENEMY_SAVE_SLOT(8),0;
+dark: 1

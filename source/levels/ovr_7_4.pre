@@ -1,0 +1,10 @@
+gfx: overworldRocky
+
+
+enemy: TT(8,11),map_object,ITEM_RANDOM_1,OBJ_BUSH;
+enemy: TT(8,15),map_object,ITEM_RANDOM_1,OBJ_BUSH;
+enemy: TT(9,15),map_object,ITEM_RANDOM_1,OBJ_BUSH;
+enemy: TT(15,5),map_object,ITEM_RANDOM_1,OBJ_BUSH;
+enemy: TT(16,5),map_object,ITEM_RANDOM_1,OBJ_BUSH;
+
+door: cave_6, CAVE_TO_EDGE_BOTTOM_X(8,1,15);

@@ -1,0 +1,9 @@
+backdrop: defaultBd
+minimap: 6,4
+
+gfx: dungeon_d3
+
+size:  1,1
+door: d3_6_5, BOTTOMEDGE;
+door: d3_7_4, RIGHTEDGE;
+door: d3_6_3, TOPEDGE;

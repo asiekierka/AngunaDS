@@ -1,0 +1,32 @@
+gfx: dungeonGreen
+backdrop: defaultBd
+minimap: 2,3
+
+door: d2_15,  EDGE_LEFT_TO_RIGHT(0,0);
+door: d2_4,   EDGE_RIGHT_TO_LEFT(0,0);
+door: d2_1,   EDGE_RIGHT_TO_LEFT(1,0);
+
+enemy: TT(0,4),door,DOOR_VERTICAL_L ,ITEM_REWARD|DOOR_APPEARS_BEFORE;
+
+enemy: TT(11,9),map_object,0,OBJ_CRATE1;
+enemy: TT(12,9),map_object,0,OBJ_CRATE1;
+enemy: TT(13,9),map_object,0,OBJ_CRATE1;
+
+
+enemy: TT(1,9),map_object,0,OBJ_CRATE2;
+enemy: TT(2,9),map_object,0,OBJ_CRATE2;
+enemy: TT(3,9),map_object,0,OBJ_CRATE2;
+
+enemy: TT(6,9),map_object,ITEM_RANDOM_1,OBJ_POT1;
+enemy: TT(7,9),map_object,ITEM_RANDOM_1,OBJ_POT_DUMP2;
+enemy: TT(7,10),map_object,ITEM_RANDOM_1,OBJ_POT3;
+enemy: TT(8,10),map_object,ITEM_RANDOM_1,OBJ_POT_DUMP1;
+enemy: TT(8,11),map_object,ITEM_RANDOM_1,OBJ_POT2;
+
+enemy: TT(5,5),ghost,ITEM_RANDOM_1,0;
+enemy: TT(5,5),ghost,ITEM_RANDOM_1,0;
+enemy: TT(5,5),ghost,ITEM_RANDOM_1,0;
+enemy: TT(5,5),ghost,ITEM_RANDOM_1,0;
+enemy: TT(5,5),ghost,ITEM_RANDOM_1,0;
+enemy: TT(5,5),ghost,ITEM_RANDOM_1,0;
+

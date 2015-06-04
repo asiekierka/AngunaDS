@@ -1,0 +1,9 @@
+backdrop: defaultBd
+minimap: 6,0
+
+gfx: zone1
+
+size:  2,2
+
+door: d5_6_2, EDGE_BOTTOM_TO_TOP(0,0);
+door: d5_7_2, EDGE_BOTTOM_TO_TOP(1,0);

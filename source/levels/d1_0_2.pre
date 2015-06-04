@@ -1,0 +1,20 @@
+gfx: zone1
+backdrop: defaultBd
+minimap: 0,0
+
+door: d1_0_1, TOPEDGE;
+door: d1_0_3, BOTTOMEDGE;
+
+enemy: T(9),T(7),slime,ITEM_RANDOM_1,0;
+enemy: T(8),T(4),spit_slime,ITEM_RANDOM_1,0;
+enemy: T(6),T(3),slime,ITEM_RANDOM_1,0;
+enemy: T(3),T(6),zipper,ITEM_RANDOM_1,0;
+
+enemy: T(8),T(7),map_object,0,OBJ_SKULL1;
+enemy: T(9),T(7),map_object,0,OBJ_BONES1;
+enemy: T(7),T(7),map_object,0,OBJ_BONES2;
+enemy: T(6),T(7),map_object,0,OBJ_SKULL2;
+enemy: T(8),T(6),map_object,0,OBJ_BONES3;
+enemy: T(9),T(6),map_object,0,OBJ_BONES4;
+enemy: T(5),T(7),map_object,0,OBJ_BONES5;
+enemy: T(5),T(6),map_object,0,OBJ_BONES3;

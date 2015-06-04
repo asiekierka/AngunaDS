@@ -1,0 +1,2 @@
+door: ovr_7_0, BOTTOM_TO_CAVE(14,9);
+enemy: TT(7,4),shop,2,2;

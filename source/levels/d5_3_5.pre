@@ -1,0 +1,13 @@
+
+//enemy: L(14),L(17),crockyBody,ENEMY_SAVES|ENEMY_SAVE_SLOT(63),0;
+//enemy: L(14),L(13)-4,crockyHeadFinal,ENEMY_SAVES|ENEMY_SAVE_SLOT(63),20;
+//enemy: L(14),L(13)+5,crockyNeck,ENEMY_SAVES|ENEMY_SAVE_SLOT(63),0;
+//enemy: L(14),L(13),crockyNeck,ENEMY_SAVES|ENEMY_SAVE_SLOT(63),0;
+
+enemy: L(14),L(17),crockyBody,0,0;
+enemy: L(14),L(13)-4,crockyHeadFinal,0,0;
+enemy: L(14),L(13)+5,crockyNeck,0,0;
+enemy: L(14),L(13),crockyNeck,0,0;
+
+enemy: T(14),T(4),door,DOOR_VERTICAL_R,ITEM_REWARD | DOOR_APPEARS_AFTER;
+

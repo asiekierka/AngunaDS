@@ -1,0 +1,19 @@
+gfx: zone1
+backdrop: defaultBd
+minimap: 0,0
+
+
+door: d1_2_1, BOTTOMEDGE;
+
+enemy: T(12),T(6),slime,ITEM_RANDOM_1,0;
+enemy: T(3),T(5),slime,ITEM_RANDOM_1,0;
+
+enemy: T(3),T(4),item,ITEM_KEY_YELLOW,ITEM_REWARD | ITEM_SAVES | 1;
+
+enemy: T(7),T(9),door,DOOR_HORIZONTAL | DOOR_YELLOW, ITEM_SAVES | 2;
+
+enemy: T(13),T(1),map_object,0,OBJ_SKEL;
+enemy: T(12),T(1),map_object,0,OBJ_SKEL;
+enemy: T(9),T(2),map_object,0,OBJ_SKULL1;
+enemy: T(3),T(3),map_object,0,OBJ_BONES1;
+

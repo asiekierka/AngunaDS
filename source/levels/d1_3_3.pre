@@ -1,0 +1,19 @@
+gfx: zone1
+backdrop: defaultBd
+minimap: 0,0
+door: d1_4_1, TOPEDGE_R;
+door: d1_2_3, LEFTEDGE;
+door: d1_4_4, BOTTOMEDGE_TO(T(8));
+door: d1_5_3, RIGHTEDGE;
+
+enemy: T(8),T(5),zipper,ITEM_RANDOM_1,0;
+enemy: T(13),T(5),bat,ITEM_RANDOM_1,0;
+enemy: T(20),T(7),bat,ITEM_RANDOM_1,0;
+enemy: T(22),T(6),zipper,ITEM_RANDOM_1,0;
+enemy: T(28),T(6),slime,ITEM_RANDOM_1,0;
+
+enemy: T(20),T(9),door,DOOR_HORIZONTAL | DOOR_INVIS,ITEM_REWARD | DOOR_APPEARS_AFTER;
+
+enemy: T(10),T(2),map_object,ITEM_RANDOM_1,OBJ_POT_DUMP1;
+enemy: T(19),T(6),map_object,0,OBJ_POT_DUMP2;
+enemy: T(19),T(7),map_object,0,OBJ_POT2;

@@ -1,0 +1,13 @@
+gfx: dungeonGreen
+backdrop: defaultBd
+minimap: 2,5
+
+door: d2_20, LEFTEDGE;
+door: d2_1, EDGE_RIGHT_TO_LEFT(0,1);
+
+enemy: TT(10,3),item,ITEM_DEFENCE_UP,ITEM_SAVES|22;
+
+enemy: TT(9,5),door,DOOR_HORIZONTAL | DOOR_HIDDEN, DOOR_APPEARS_AFTER;
+
+
+

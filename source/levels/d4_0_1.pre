@@ -1,0 +1,9 @@
+enemy:  TT(7,1),door,DOOR_HORIZONTAL | DOOR_BLUE, ITEM_SAVES | 37;
+
+enemy: EERAND(1,1),bat,ITEM_RANDOM_1,0;
+enemy: EERAND(1,1),bat,ITEM_RANDOM_1,0;
+enemy: EERAND(1,1),bat,ITEM_RANDOM_1,0;
+enemy: EERAND(1,1),redbat,ITEM_RANDOM_1,0;
+enemy: EERAND(1,1),redbat,ITEM_RANDOM_1,0;
+
+

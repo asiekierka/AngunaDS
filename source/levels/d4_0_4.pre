@@ -1,0 +1,6 @@
+enemy:  TT(14,4),door,DOOR_VERTICAL_R, ITEM_REWARD | DOOR_APPEARS_AFTER; 
+
+enemy: EERAND(1,1),redogre,ITEM_RANDOM_1,0;
+enemy: EERAND(1,1),redogre,ITEM_RANDOM_1,0;
+
+enemy: TT(2,6),switch,SWITCH_TOGGLE(4),ITEM_REWARD;

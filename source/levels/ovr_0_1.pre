@@ -1,0 +1,12 @@
+enemy: TT(17,9),map_object,ITEM_RANDOM_1,OBJ_BUSH;
+enemy: TT(18,9),map_object,ITEM_RANDOM_1,OBJ_BUSH;
+enemy: TT(19,9),map_object,ITEM_RANDOM_1,OBJ_BUSH;
+
+enemy: TT(13,5),map_object,ITEM_RANDOM_1,OBJ_BUSH;
+enemy: TT(14,5),map_object,ITEM_RANDOM_1,OBJ_BUSH;
+
+enemy: TT(20,16),map_object,ITEM_RANDOM_1,OBJ_BUSH;
+enemy: TT(21,16),map_object,ITEM_RANDOM_1,OBJ_BUSH;
+
+
+

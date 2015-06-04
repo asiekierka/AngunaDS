@@ -1,0 +1,6 @@
+
+
+door: d4_1_2,CAVE_TO_EDGE_BOTTOM(13,3);
+gfx: overworld2
+respawn: 1
+

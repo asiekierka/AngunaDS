@@ -1,0 +1,66 @@
+#ifndef DEBUGBUILDS_H_
+#define DEBUGBUILDS_H_
+
+
+#ifdef LEVEL5
+#ifndef GAME_START
+#define GAME_START level_ovr_5_0
+#endif
+#define START_ITEM_NBR 8
+#define START_ITEMS {ITEM_BOW,ITEM_ARROWS,ITEM_POTION,ITEM_LANTERN, ITEM_BOOTS, ITEM_DYNAMITE, ITEM_ATTACK_RING, ITEM_KEY_YELLOW}
+#define START_ITEM_QTY {1,40,2,1,1,9,1,5}
+#define MC_START_HP 80
+#define MC_START_ARMOR 8
+#define MC_START_POWER 9
+#endif
+
+#ifdef LEVEL4
+#ifndef GAME_START
+#define GAME_START level_d4_1_2
+#endif
+#define START_ITEM_NBR 5
+#define START_ITEMS {ITEM_BOW,ITEM_ARROWS,ITEM_POTION,ITEM_LANTERN, ITEM_BOOTS}
+#define START_ITEM_QTY {1,40,2,1,1}
+#define MC_START_HP 60
+#define MC_START_ARMOR 5
+#define MC_START_POWER 6
+#endif
+
+#ifdef LEVEL3
+#ifndef GAME_START
+#define GAME_START level_d3_5_7
+#endif
+#define START_ITEM_NBR 4
+#define START_ITEMS {ITEM_BOW,ITEM_ARROWS,ITEM_POTION,ITEM_LANTERN}
+#define START_ITEM_QTY {1,40,1,1}
+#define MC_START_HP 44
+#define MC_START_ARMOR 2
+#define MC_START_POWER 4
+#endif
+
+#ifdef LEVEL2
+#ifndef GAME_START
+#define GAME_START level_d2_1
+#endif
+#define START_ITEM_NBR 4
+#define START_ITEMS {ITEM_BOW,ITEM_ARROWS,ITEM_POTION,ITEM_KEY_RED}
+#define START_ITEM_QTY {1,25,1,1}
+#define MC_START_HP 32
+#define MC_START_ARMOR 1
+#define MC_START_POWER 2
+#endif
+
+#ifdef OVERWORLD
+#ifndef GAME_START
+#define GAME_START level_ovr_4_2
+#endif
+#define START_ITEM_NBR 3
+#define START_ITEMS {ITEM_BOW,ITEM_ARROWS,ITEM_POTION,ITEM_KEY_RED}
+#define START_ITEM_QTY {1,25,1}
+#define MC_START_HP 32
+#define MC_START_ARMOR 1
+#define MC_START_POWER 2
+#endif
+
+
+#endif /*DEBUGBUILDS_H_*/

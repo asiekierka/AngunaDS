@@ -1,0 +1,7 @@
+enemy: TT(7,1),door,DOOR_HORIZONTAL | DOOR_HIDDEN | DOOR_TOGGLE(1), 0;
+enemy: TT(0,4),door,DOOR_VERTICAL_L | DOOR_HIDDEN |  DOOR_TOGGLE(1) | DOOR_TOGGLE_FLIP, 0;
+
+enemy: EERAND(1,1),ogre,ITEM_RANDOM_1,0;
+enemy: EERAND(2,2),ogre,ITEM_RANDOM_1,0;
+enemy: TT(3,5),wallHugger,ITEM_RANDOM_1,0;
+enemy: TT(10,5),wallHugger,ITEM_RANDOM_1,0;

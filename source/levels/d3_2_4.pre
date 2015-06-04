@@ -1,0 +1,13 @@
+
+enemy: TT(2,5),item,ITEM_KEY_RED,ITEM_REWARD | ITEM_SAVES | 28;
+enemy: TT(2,6),item,ITEM_LIFE_UP,ITEM_REWARD | ITEM_SAVES | 29;
+
+enemy: L(14),L(17),crockyBody,ITEM_RANDOM_1,0;
+enemy: L(14),L(13)-4,crockyHead,ITEM_RANDOM_1,7;
+enemy: L(14),L(13)+5,crockyNeck,ITEM_RANDOM_1,0;
+enemy: L(14),L(13),crockyNeck,ITEM_RANDOM_1,0;
+
+enemy: L(4),L(17),crockyBody,ITEM_RANDOM_1,0;
+enemy: L(4),L(13)-4,crockyHead,ITEM_RANDOM_1,7;
+enemy: L(4),L(13)+5,crockyNeck,ITEM_RANDOM_1,0;
+enemy: L(4),L(13),crockyNeck,ITEM_RANDOM_1,0;

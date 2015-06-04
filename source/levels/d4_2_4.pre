@@ -1,0 +1,2 @@
+stairs:  6,1,d4_5_0,22,4,DOWN;
+enemy: EERAND(1,1),redogre,ITEM_RANDOM_1,0;

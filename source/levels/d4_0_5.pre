@@ -1,0 +1,6 @@
+enemy: TT(4,7),item,ITEM_ATTACK_RING, ITEM_SAVES | 43;
+stairs:  2,0,d4_4_5,2,3,UP;
+
+enemy: TT(7,2),redbat,ITEM_RANDOM_1,0;
+enemy: TT(12,2),redbat,ITEM_RANDOM_1,0;
+enemy: TT(10,7),redbat,ITEM_RANDOM_1,0;

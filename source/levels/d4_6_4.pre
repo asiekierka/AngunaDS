@@ -1,0 +1,7 @@
+enemy: EERAND(1,1),redogre,ITEM_RANDOM_1,0;
+
+enemy: T(6),T(4),map_object,0,OBJ_BONES4;
+enemy: T(1),T(6),map_object,0,OBJ_SKULL1;
+enemy: T(10),T(7),map_object,0,OBJ_BONES5;
+enemy: T(12),T(6),map_object,0,OBJ_BONES3;
+

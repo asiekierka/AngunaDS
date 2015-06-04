@@ -1,0 +1,45 @@
+-retesting dungeon 4
+
+
+--BUGS
+-add low power mode for lid closed
+-better sound lib
+
+
+
+---FIXED----
+-don't let enemies spawn right in front of a cave/stairs/door
+-using last potion still shows a 1
+-bushes bleed red.
+-save and continue resets subscreen to item screen
+-continue should continue from where you saved!?
+-no animation on diagonal movement
+-traps not get reset
+-giant bat boss locks up game
+-When I talk to the merchant near the lake dungeon (bottom-left), the top of the tree dissapears.
+-Saving and quitting in a dark room will dump you into a black screen
+-With enemy database showing, entering and exiting caves will mess up the text
+	that tells what L/R do at the bottom
+-Changing to enemy database at beginning of the game, then killing the first enemy
+	will show messed up text on screen
+-stray pixel on main menu
+-transparency on icon
+-crates block bullets?
+-gradient on lantern surround?
+-heart from grass in graveyard gone if you don't get it?
+
+
+----maybe?
+-make map more obvious?
+-better main menu?
+-coming out of stairs more obvious?
+
+
+
+-Fix outdoor music (new audio lib?)
+-add theme music (no need?)
+
+-Better error checking on save/load??
+-game over in darkness
+
+

@@ -1,0 +1,7 @@
+
+enemy: TT(2,5),item,ITEM_KEY_RED,ITEM_REWARD | ITEM_SAVES | 25;
+
+enemy: TT(8,4),ogre,ITEM_RANDOM_1,0;
+enemy: TT(11,6),ogre,ITEM_RANDOM_1,0;
+enemy: TT(12,4),ogre,ITEM_RANDOM_1,0;
+

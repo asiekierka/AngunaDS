@@ -1,0 +1,8 @@
+gfx: cave
+door: cave_6, LEFTEDGE_TO(T(7));
+dark: 1
+
+enemy: TT(12,7),ogre,ITEM_RANDOM_1,0;
+
+enemy: T(3),T(2),item,ITEM_ATTACK_UP,ITEM_REWARD | ITEM_SAVES | 54;
+

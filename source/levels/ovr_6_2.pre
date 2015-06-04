@@ -1,0 +1,5 @@
+gfx: overworldRocky
+
+enemy: TT(8,8),boulder,ENEMY_SAVES|ENEMY_SAVE_SLOT(49),0;
+enemy: TT(16,3),boulder,ENEMY_SAVES|ENEMY_SAVE_SLOT(85),0;
+

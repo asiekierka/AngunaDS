@@ -1,0 +1,7 @@
+gfx: zone1
+backdrop: defaultBd
+minimap: 0,0
+
+door: d1_3_3, TOPEDGE_TO(T(20));
+
+enemy: T(8),T(7),item,ITEM_LIFE_UP, ITEM_SAVES | 9 ;

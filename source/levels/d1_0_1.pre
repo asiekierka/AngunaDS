@@ -1,0 +1,23 @@
+gfx: zone1
+backdrop: defaultBd
+minimap: 0,0
+door: d1_1_0, TOPEDGE_R;
+door: d1_0_0, TOPEDGE_L;
+door: d1_0_2, BOTTOMEDGE_L;
+door: d1_1_2, BOTTOMEDGE_R;
+
+enemy: T(20),T(5),spit_slime,ITEM_RANDOM_1,0;
+
+enemy: L(33),L(6),bat,ITEM_RANDOM_1,0;
+enemy: L(37),L(14),bat,ITEM_RANDOM_1,0;
+enemy: L(53),L(10),bat,ITEM_RANDOM_1,0;
+enemy: L(50),L(4),bat,ITEM_RANDOM_1,0;
+
+enemy: T(22),T(1),door,DOOR_HORIZONTAL | DOOR_HIDDEN, DOOR_APPEARS_BEFORE;
+enemy: T(13),T(5),door,DOOR_VERTICAL_L, DOOR_APPEARS_BEFORE | ITEM_REWARD;
+enemy: T(12),T(5),door,DOOR_VERTICAL_R, DOOR_APPEARS_BEFORE | ITEM_REWARD;
+enemy: T(7),T(1),door,DOOR_HORIZONTAL | DOOR_INVIS, DOOR_FAKE;
+
+enemy: T(27),T(2),map_object,ITEM_RANDOM_1, OBJ_CRATE1;
+enemy: T(28),T(2),map_object,ITEM_RANDOM_1, OBJ_CRATE2;
+enemy: T(28),T(3),map_object,ITEM_RANDOM_1, OBJ_CRATE3;

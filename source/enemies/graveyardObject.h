@@ -1,0 +1,25 @@
+#ifndef GRAVEYARD_OBJECT_H_
+#define GRAVEYARD_OBJECT_H_
+
+const typedef enum 
+{
+	GY_FENCE,
+	GY_FENCE_2,
+	GY_FENCE_CAP_R,
+	GY_FENCE_CAP_L,
+	GY_FENCE_VERT_R,
+	GY_FENCE_VERT_L,
+	GY_GRAVE_1,
+	GY_GRAVE_2,
+	GY_GRAVE_3,
+	GY_GRAVE_4,
+	GY_GRAVE_5,
+	GY_BIG_GRAVE,
+	GY_BIG_GRAVE_B,
+	GY_THORNY_GRAVE,
+	GY_STATUE,
+	GY_STATUE_B,
+} GraveyardParts;
+
+
+#endif

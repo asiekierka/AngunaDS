@@ -1,0 +1,5 @@
+enemy: TT(7,9),door,DOOR_HORIZONTAL | DOOR_HIDDEN | DOOR_TOGGLE(1),0;
+enemy: TT(6,2),switch,SWITCH_TOGGLE(1),0;
+
+enemy: TT(7,3),wallHugger,ITEM_RANDOM_1,0;
+enemy: TT(13,2),wallHugger,ITEM_RANDOM_1,0;

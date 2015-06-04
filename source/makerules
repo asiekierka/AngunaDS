@@ -1,0 +1,42 @@
+
+include $(DEVKITARM)/ds_rules
+
+ARCH	:=	-mthumb -mthumb-interwork
+
+CFLAGS	:=	-c -g -Wall -O2\
+ 			-mcpu=arm9tdmi -mtune=arm9tdmi -fomit-frame-pointer\
+			-ffast-math \
+			$(ARCH)
+			
+CFLAGS	+=	$(INCLUDE) -DARM9
+CXXFLAGS	:= $(CFLAGS) -fno-rtti -fno-exceptions
+
+#LIBGBA=$(DEVKITPRO)/libgba
+
+INCLUDE=-I$(LIBNDS)/include
+
+CFLAGS	+=	$(INCLUDE)
+
+ASFLAGS	:=	$(ARCH)
+
+export PATH		:=	$(DEVKITARM)/bin;$(DEVKITPRO)/msys/bin;$(PATH)
+
+LIBNDS=$(DEVKITPRO)/libnds
+
+LIBS=-lfat -lnds9
+LIBDIRS=$(LIBNDS)/lib
+LIBENTRY=-L$(LIBDIRS) $(LIBS)
+
+LDFLAGS	=	-specs=ds_arm9.specs -g $(ARCH) -mno-fpu -Wl,-Map,$(notdir $*.map)
+
+PERL=/usr/bin/perl
+ZIP=/usr/bin/zip
+
+#if building on non-windows, tough luck....
+NSIS=/c/program\ files/nsis/makensis.exe
+
+DEPLOYDIR=d:/wwwroot/anguna
+
+
+#if building on windows, set this to blank...
+WINE=

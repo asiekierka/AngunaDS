@@ -1,0 +1,14 @@
+gfx: dungeonGreen
+backdrop: defaultBd
+minimap: 0,4
+
+door: d2_14, TOPEDGE;
+door: d2_19, BOTTOMEDGE;
+
+enemy: TT(3,3),wallHugger,ITEM_RANDOM_1,0;
+enemy: TT(8,3),wallHugger,ITEM_RANDOM_1,0;
+enemy: TT(6,3),wallHugger,ITEM_RANDOM_1,0;
+
+enemy: TT(6,9),door,DOOR_HORIZONTAL | DOOR_BLUE, ITEM_SAVES | 20
+
+

@@ -1,0 +1,21 @@
+gfx: dungeonGreen
+backdrop: defaultBd
+minimap: 1,5
+
+door: d2_19, LEFTEDGE;
+door: d2_21, RIGHTEDGE;
+
+enemy: TT(8,4),map_object,0,OBJ_SKULL1;
+enemy: TT(10,14),map_object,0,OBJ_BONES1;
+enemy: TT(4,6),map_object,0,OBJ_BONES2;
+
+enemy: TT(1,3),fire_statue,0,ENEMY_DIR_E;
+enemy: TT(1,7),fire_statue,0,ENEMY_DIR_E;
+enemy: TT(12,5),fire_statue,0,ENEMY_DIR_W;
+enemy: TT(13,5),big_ghost,ENEMY_SAVES|ENEMY_SAVE_SLOT(21),0;
+enemy: TT(7,4),item,ITEM_KEY_YELLOW,ITEM_REWARD | ITEM_SAVES | 80;
+
+enemy: TT(14,7),door,DOOR_VERTICAL_R | DOOR_INVIS, DOOR_APPEARS_AFTER | ITEM_REWARD;
+
+
+

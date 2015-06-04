@@ -1,0 +1,21 @@
+gfx: overworldRocky
+
+enemy: TT(6,4),map_object,ITEM_RANDOM_1,OBJ_BUSH;
+enemy: TT(6,6),map_object,ITEM_RANDOM_1,OBJ_BUSH;
+enemy: TT(3,4),map_object,ITEM_RANDOM_1,OBJ_BUSH;
+enemy: TT(4,4),map_object,ITEM_RANDOM_1,OBJ_BUSH;
+enemy: TT(5,5),map_object,ITEM_LIFE_UP|ENEMY_SAVES|ENEMY_SAVE_SLOT(50),OBJ_BUSH;
+
+
+enemy: TT(15,4),map_object,ITEM_RANDOM_1,OBJ_BUSH;
+enemy: TT(15,5),map_object,ITEM_RANDOM_1,OBJ_BUSH;
+enemy: TT(15,6),map_object,ITEM_RANDOM_1,OBJ_BUSH;
+enemy: TT(15,7),map_object,ITEM_RANDOM_1,OBJ_BUSH;
+enemy: TT(15,8),map_object,ITEM_RANDOM_1,OBJ_BUSH;
+enemy: TT(16,5),map_object,ITEM_RANDOM_1,OBJ_BUSH;
+enemy: TT(16,6),map_object,ITEM_RANDOM_1,OBJ_BUSH;
+
+enemy: TT(24,7),map_object,ITEM_RANDOM_1,OBJ_CACTUS;
+enemy: TT(24,8),map_object,ITEM_RANDOM_1,OBJ_CACTUS;
+
+

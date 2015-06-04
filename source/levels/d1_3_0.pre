@@ -1,0 +1,5 @@
+gfx: zone1
+backdrop: defaultBd
+minimap: 0,0
+door: d1_4_0, RIGHTEDGE;
+enemy: L(15),L(9),item,ITEM_BOW, ITEM_SAVES | 5;

@@ -1,0 +1,13 @@
+enemy:  TT(0,4),door,DOOR_VERTICAL_L | DOOR_HIDDEN,0;
+enemy:  TT(7,1),door,DOOR_HORIZONTAL | DOOR_RED, ITEM_SAVES | 36;
+
+enemy: TT(14,4),door,DOOR_VERTICAL_R | DOOR_INVIS |  DOOR_TOGGLE(3)| DOOR_TOGGLE_FLIP, 0;
+
+
+
+enemy: EERAND(1,1),bat,ITEM_RANDOM_1,0;
+enemy: EERAND(1,1),bat,ITEM_RANDOM_1,0;
+enemy: EERAND(1,1),bat,ITEM_RANDOM_1,0;
+enemy: EERAND(1,1),redbat,ITEM_RANDOM_1,0;
+enemy: EERAND(1,1),redbat,ITEM_RANDOM_1,0;
+

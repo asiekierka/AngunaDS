@@ -1,0 +1,6 @@
+gfx: overworldRocky
+
+enemy: TT(13,16),map_object,ITEM_RANDOM_1,OBJ_CACTUS;
+enemy: TT(11,10),map_object,ITEM_RANDOM_1,OBJ_CACTUS;
+enemy: TT(14,16),spider,0,0;
+

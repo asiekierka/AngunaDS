@@ -1,0 +1,11 @@
+stairs:  7,0,d5_3_4,7,3,DOWN;
+
+enemy: TT(1,3),statue,0,ENEMY_DIR_E;
+enemy: TT(1,7),statue,0,ENEMY_DIR_E;
+
+enemy: TT(12,3),statue,0,ENEMY_DIR_W;
+enemy: TT(12,7),statue,0,ENEMY_DIR_W;
+
+enemy: T(5),T(1),map_object,0,OBJ_SKEL;
+enemy: T(9),T(1),map_object,0,OBJ_SKEL;
+

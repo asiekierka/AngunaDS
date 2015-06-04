@@ -1,0 +1,2 @@
+enemy: T(7),T(1),door,DOOR_HORIZONTAL | DOOR_YELLOW, ITEM_SAVES | 66;
+

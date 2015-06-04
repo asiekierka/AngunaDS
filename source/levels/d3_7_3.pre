@@ -1,0 +1,10 @@
+enemy: TT(13,9),door,DOOR_HORIZONTAL | DOOR_HIDDEN, DOOR_APPEARS_AFTER | ITEM_REWARD;
+enemy: TT(7,1),door,DOOR_HORIZONTAL | DOOR_HIDDEN | DOOR_TOGGLE(1) ,0;
+
+enemy: T(4),T(1),map_object,0,OBJ_SKEL;
+enemy: T(10),T(1),map_object,0,OBJ_SKEL;
+enemy: T(9),T(2),map_object,0,OBJ_SKULL1;
+enemy: T(3),T(3),map_object,0,OBJ_BONES1;
+enemy: T(5),T(6),map_object,0,OBJ_BONES2;
+
+enemy: EERAND(2,2),vampire,ITEM_RANDOM_1,0;

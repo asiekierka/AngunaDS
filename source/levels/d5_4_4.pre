@@ -1,0 +1,11 @@
+enemy: TT(8,4),map_object,0,OBJ_SKULL1;
+enemy: TT(10,14),map_object,0,OBJ_BONES1;
+enemy: TT(4,6),map_object,0,OBJ_BONES2;
+
+enemy: TT(1,3),fire_statue,0,ENEMY_DIR_E;
+enemy: TT(1,7),fire_statue,0,ENEMY_DIR_E;
+enemy: TT(12,5),fire_statue,0,ENEMY_DIR_W;
+enemy: TT(13,5),big_ghost_final,0,0;
+
+enemy: TT(7,1),door,DOOR_HORIZONTAL,ITEM_REWARD | DOOR_APPEARS_BEFORE;
+

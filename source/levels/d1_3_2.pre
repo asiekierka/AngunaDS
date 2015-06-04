@@ -1,0 +1,8 @@
+gfx: zone1
+backdrop: defaultBd
+minimap: 0,0
+door: d1_2_1, EDGE_TOP_TO_BOTTOM(0,1) 
+enemy: T(4),T(7),zipper,ITEM_RANDOM_1,0;
+enemy: T(11),T(6),zipper,ITEM_RANDOM_1,0;
+enemy: T(13),T(3),zipper,ITEM_RANDOM_1,0;
+enemy: T(7),T(3),item,ITEM_KEY_RED,ITEM_REWARD | ITEM_SAVES | 3;

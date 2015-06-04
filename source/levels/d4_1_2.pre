@@ -1,0 +1,7 @@
+enemy:  TT(7,1),door,DOOR_HORIZONTAL | DOOR_HIDDEN,0;
+
+door: ovr_1_2, BOTTOM_TO_CAVE(13,4);
+
+enemy: EERAND(1,1),bat,ITEM_RANDOM_1,0;
+enemy: EERAND(1,1),bat,ITEM_RANDOM_1,0;
+enemy: EERAND(1,1),bat,ITEM_RANDOM_1,0;

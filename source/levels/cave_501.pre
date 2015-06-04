@@ -1,0 +1,7 @@
+gfx: cave
+door: cave_5, BOTTOM_TO_CAVE(5,4);
+door: cave_502, CAVE_TO_EDGE_BOTTOM_X(4,1,3);
+door: cave_505, CAVE_TO_CAVE(11,6,5,2);
+dark: 1
+enemy:  EERAND(1,1),snake,ITEM_RANDOM_1,0;
+enemy:  EERAND(1,1),snake,ITEM_RANDOM_1,0;

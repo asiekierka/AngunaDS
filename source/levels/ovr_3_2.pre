@@ -1,0 +1,6 @@
+
+enemy: TT(17,16),map_object,ITEM_RANDOM_1,OBJ_BUSH;
+enemy: TT(17,17),map_object,ITEM_RANDOM_1,OBJ_BUSH;
+
+door: cave_1,CAVE_TO_EDGE_BOTTOM(21,0);
+

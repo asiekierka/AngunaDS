@@ -1,0 +1,20 @@
+gfx: overworldGraveyard
+
+
+door: d3_5_7,CAVE_TO_EDGE_BOTTOM(19,9);
+
+enemy: TT(13,13),bigmap_object,0,OBJ_TREE_DEAD_1;
+enemy: TT(22,13),bigmap_object,0,OBJ_TREE_DEAD_2;
+
+
+enemy: TT(2,5),graveyard_object,0,GY_GRAVE_1;
+enemy: TT(3,7),graveyard_object,0,GY_GRAVE_4;
+enemy: TT(5,8),graveyard_object,0,GY_GRAVE_3;
+enemy: TT(7,9),graveyard_object,0,GY_GRAVE_5;
+enemy: TT(9,11),graveyard_object,0,GY_GRAVE_2;
+enemy: TT(10,9),graveyard_object,0,GY_GRAVE_3;
+enemy: TT(3,10),graveyard_object,0,GY_GRAVE_4;
+enemy: TT(11,12),graveyard_object,0,GY_GRAVE_5;
+enemy: TT(8,6),graveyard_object,0,GY_GRAVE_1;
+
+

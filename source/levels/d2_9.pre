@@ -1,0 +1,13 @@
+gfx: dungeonGreen
+backdrop: defaultBd
+minimap: 6,1
+
+
+#door: d2_11, EDGE_RIGHT_TO_LEFT(0,0);
+door: d2_8, EDGE_BOTTOM_TO_TOP(0,0);
+
+
+enemy: TT(5,5),pit_serpent,ENEMY_SAVES|ENEMY_SAVE_SLOT(14),0;
+enemy: TT(14,4),door,DOOR_VERTICAL_R|DOOR_HIDDEN,DOOR_APPEARS_AFTER;
+
+enemy: T(3),T(4),item,ITEM_KEY_BLUE,ITEM_REWARD | ITEM_SAVES | 15;

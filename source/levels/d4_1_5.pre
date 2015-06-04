@@ -1,0 +1,8 @@
+enemy: EERAND(1,1),ogre,ITEM_RANDOM_1,0;
+enemy: EERAND(1,1),ogre,ITEM_RANDOM_1,0;
+enemy: EERAND(2,2),ogre,ITEM_RANDOM_1,0;
+enemy: EERAND(2,2),redogre,ITEM_RANDOM_1,0;
+
+enemy: TT(0,4),door,DOOR_VERTICAL_L,DOOR_APPEARS_BEFORE | ITEM_REWARD;
+
+dark: 1

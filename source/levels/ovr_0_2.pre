@@ -1,0 +1,6 @@
+
+
+enemy: TT(11,11),boulder,ENEMY_SAVES|ENEMY_SAVE_SLOT(55),0;
+
+
+

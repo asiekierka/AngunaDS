@@ -1,0 +1,15 @@
+gfx: overworldRocky
+
+enemy: TT(4,18),boulder,ENEMY_SAVES|ENEMY_SAVE_SLOT(71),0;
+
+enemy: TT(12,18),map_object,ITEM_RANDOM_1,OBJ_CACTUS;
+enemy: TT(24,17),map_object,ITEM_RANDOM_1,OBJ_CACTUS;
+enemy: TT(17,7),map_object,ITEM_RANDOM_1,OBJ_CACTUS;
+enemy: TT(26,12),map_object,ITEM_RANDOM_1,OBJ_CACTUS;
+enemy: TT(13,15),map_object,ITEM_RANDOM_1,OBJ_CACTUS;
+enemy: TT(16,12),map_object,ITEM_RANDOM_1,OBJ_CACTUS;
+enemy: TT(26,14),map_object,ITEM_RANDOM_1,OBJ_CACTUS;
+enemy: TT(11,18),map_object,ITEM_RANDOM_1,OBJ_CACTUS;
+
+enemy: TT(15,4),bigmap_object,0,OBJ_TREE_DEAD_2;
+enemy: TT(21,10),bigmap_object,0,OBJ_TREE_DEAD_1;

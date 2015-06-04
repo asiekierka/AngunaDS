@@ -1,0 +1,23 @@
+enemy: TT(0,4),door,DOOR_VERTICAL_L | DOOR_HIDDEN, 0;
+
+enemy: T(11),T(2),map_object,0,OBJ_POT2;
+enemy: T(1),T(2),map_object,0,OBJ_POT1;
+enemy: T(2),T(2),map_object,0,OBJ_POT_DUMP1;
+
+enemy: T(10),T(1),map_object,0,OBJ_SKEL;
+enemy: T(10),T(5),map_object,0,OBJ_SKULL2;
+enemy: T(12),T(7),map_object,0,OBJ_SKULL1;
+enemy: T(11),T(6),map_object,0,OBJ_BONES1;
+enemy: T(8),T(5),map_object,0,OBJ_BONES2;
+
+enemy: EERAND(1,1),attack_ghost,ITEM_RANDOM_1,0;
+enemy: EERAND(1,1),attack_ghost,ITEM_RANDOM_1,0;
+enemy: EERAND(1,1),attack_ghost,ITEM_RANDOM_1,0;
+enemy: EERAND(1,1),attack_ghost,ITEM_RANDOM_1,0;
+enemy: EERAND(1,1),ghost,ITEM_RANDOM_1,0;
+enemy: EERAND(1,1),ghost,ITEM_RANDOM_1,0;
+enemy: EERAND(1,1),ghost,ITEM_RANDOM_1,0;
+enemy: EERAND(1,1),ghost,ITEM_RANDOM_1,0;
+
+
+

@@ -1,0 +1,5 @@
+enemy: T(6),T(5),map_object,0,OBJ_BONES3;
+enemy: T(7),T(5),map_object,0,OBJ_SKULL1;
+enemy: T(8),T(5),map_object,0,OBJ_BONES2;
+
+enemy: TT(8,5),trap,0,ENEMY_DIR_E;

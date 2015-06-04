@@ -1,0 +1,27 @@
+gfx: zone1
+backdrop: defaultBd
+minimap: 0,0
+respawn: 1
+
+door: d1_2_2, TOPEDGE;
+door: d1_3_3, RIGHTEDGE;
+door: d1_1_2, EDGE_LEFT_TO_RIGHT(0,1);
+
+enemy: T(11),T(6),ogre,ITEM_POTION|ENEMY_SAVES|ENEMY_SAVE_SLOT(8),0;
+
+
+enemy: T(3),T(1),map_object,0,OBJ_SKEL;
+enemy: T(9),T(1),map_object,0,OBJ_SKEL;
+enemy: T(11),T(1),map_object,0,OBJ_SKEL;
+
+enemy: T(3),T(6),map_object,0,OBJ_SKULL1;
+enemy: T(8),T(3),map_object,0,OBJ_SKULL2;
+
+enemy: T(4),T(6),map_object,0,OBJ_BONES2;
+enemy: T(4),T(2),map_object,0,OBJ_BONES1;
+enemy: T(12),T(3),map_object,0,OBJ_BONES3;
+enemy: T(12),T(4),map_object,0,OBJ_BONES4;
+
+enemy: T(0),T(4),door,DOOR_VERTICAL_L | DOOR_HIDDEN, DOOR_APPEARS_BEFORE | ITEM_REWARD;
+enemy: T(14),T(4),door,DOOR_VERTICAL_R | DOOR_HIDDEN, DOOR_APPEARS_AFTER | ITEM_REWARD;
+

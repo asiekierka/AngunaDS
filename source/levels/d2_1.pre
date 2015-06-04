@@ -1,0 +1,16 @@
+gfx: dungeonGreen
+backdrop: defaultBd
+minimap: 3,4
+respawn: 1
+
+door: d2_4,  TOPEDGE;
+door: d2_3,  EDGE_RIGHT_TO_LEFT(0,1);
+door: d2_2,  EDGE_LEFT_TO_RIGHT(0,1);
+
+door: d2_21, EDGE_LEFT_TO_RIGHT(1,0);
+
+enemy: TT(1,11),fire_statue,0,ENEMY_DIR_E;
+enemy: TT(12,11),fire_statue,0,ENEMY_DIR_W;
+
+
+door: ovr_9_0, BOTTOM_TO_CAVE(25,2);

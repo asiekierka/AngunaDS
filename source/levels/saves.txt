@@ -1,0 +1,102 @@
+1 - d1_2_1			yellow key
+2 - d1_2_1			yellow door
+3 - d1_3_2			red key
+4 - d1_2_2			red door
+5 - d1_3_0			Bow & arrow
+6 - d1_0_1			yellow door
+7 - d1_1_0			ATTACK powerup
+8 - d1_2_3			ogre
+9 - d1_4_4			LIFE powerup
+10 - d2_4			ogre
+11 - d2_4			zipper
+12 - d2_5			LIFE up
+13 - d1_0_3			crocky
+14 - d2_9			pit serpent
+15 - d2_9			blue key
+16 - d2_11			blue door
+17 - d2_12			lantern
+18 - d2_5		 	red door
+19 - d2_16		  	blue key
+20 - d2_18		  	blue door
+21 - d2_20			level 2 boss & yellow key
+22 - d2_21		  	ARMOR up
+23 - d3_6_2		 	boots
+24 - d3_6_1		 	LIFE up
+25 - d3_3_6		 	potion/darkvampire
+26 - d3_4_5		 	red key
+27 - d3_3_3		 	stash of arrows, etc
+28 - d3_2_4		 	red key
+29 - d3_2_4		 	LIFE up
+30 - d3_2_2			giant bat
+31 - d3_2_1			ATTACK up
+32 - d3_2_3			yellow key
+33 - overworld		shop LIFE option
+34 - d4_0_2			red key
+35 - d4_2_2			blue key
+36 - d4_2_1			red door
+37 - d4_0_1			blue door
+38 - d4_4_1			blue door
+39 - d4_5_0			ATTACK powerup
+40 - d4_3_1			ARMOR powerup
+41 - d4_2_5		 	red door
+42 - d4_2_5		 	red key
+43 - d4_0_5		 	power ring
+44 - d4_0_3		 	items
+45 - d4_0_6		 	blue key
+46 - ovr_5_3		ARMOR up
+47 - ovr_4_4		LIFE up
+48 - ovr_4_4		boulder
+49 - ovr_6_2		boulder 1
+49 - ovr_6_2		boulder 2
+50 - ovr_6_0		LIFE up
+51 - ovr_7_0		shop ARMOR
+52 - cave_506		LIFE up
+53 - cave_603		red key
+54 - cave_604		ATTACK up
+55 - ovr_0_2		boulder
+56 - d3_7_2			boulder
+57 - overworld		did buy dynamite
+58 - ovr_1_5		shop ARMOR powerup
+59 - ovr_1_5		shop LIFE powerup
+60 - cave_904		gold bag
+61 - cave_801		potion
+62 - d5_2_2			1st yellow door
+//63 - d5_3_5		Crocky final
+64 - d5_4_5			2nd yellow door
+65 - d5_6_6			3rd yellow door
+66 - d5_7_7			4th yellow door
+67 - d4_4_4			crab boss & yellow key
+68 - dummy		
+69 - d1_5_3			LIFE up
+70 - overworld		did buy traps
+71 - ovr_9_1		boulder
+72 - ovr_3_1		ATTACK up in statue
+73 - ovr_4_0		LIFE up
+74 - overworld		shop map dngn 2
+75 - overworld		shop map dngn 3
+76 - overworld		shop map dngn 4
+77 - d3_5_2			red door
+78 - d2_4			ATTACK up
+79 - d1_0_3		 	yellow key (d1)
+80 - d2_20		  	yellow key (d2)
+81 - d4_4_4			yellow key (d4)
+82 - d4_1_0			blue key
+
+
+
+
+--
+
+d2: 
+s1 - 15		 meat
+s2 - 15		 arrows
+s3 - 17		 meat
+
+toggles:
+1 - d3		
+2 - d3		
+3 - d4		(1) -- d4_3_1 related (1st and 2nd floor right outlaying room)
+4 - d4		(2) -- for getting power ring on 3rd floor
+5 - d4		(3) -- for getting through 4th floor
+
+

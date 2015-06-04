@@ -1,0 +1,2 @@
+enemy: EERAND(0,0),giantbatfinal,0,0;
+enemy: T(14),T(4),door,DOOR_VERTICAL_R,ITEM_REWARD | DOOR_APPEARS_AFTER;

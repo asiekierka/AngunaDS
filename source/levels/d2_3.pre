@@ -1,0 +1,28 @@
+gfx: dungeonGreen
+backdrop: defaultBd
+minimap: 4,3
+
+door: d1_2_0, BOTTOMEDGE;
+
+door: d2_1,   EDGE_LEFT_TO_RIGHT(1,0);
+door: d2_4,   EDGE_LEFT_TO_RIGHT(0,0);
+
+enemy: TT(6,9),map_object,0,OBJ_BONES1;
+enemy: TT(7,9),map_object,0,OBJ_BONES2;
+enemy: TT(7,10),map_object,0,OBJ_BONES3;
+enemy: TT(8,10),map_object,0,OBJ_SKULL1;
+enemy: TT(8,11),map_object,0,OBJ_BONES5;
+enemy: TT(8,13),map_object,0,OBJ_BONES4;
+enemy: TT(6,14),map_object,0,OBJ_SKULL2;
+enemy: TT(7,5),map_object,0,OBJ_SKULL2;
+enemy: TT(9,3),map_object,0,OBJ_BONES2;
+
+//enemy: TT(3,0),fire_statue,0,ENEMY_DIR_S;
+//enemy: TT(11,0),fire_statue,0,ENEMY_DIR_S;
+
+enemy: TT(0,8),fire_statue,0,ENEMY_DIR_E;
+enemy: TT(14,8),fire_statue,0,ENEMY_DIR_W;
+
+enemy: TT(3,10),fire_statue,0,ENEMY_DIR_E;
+enemy: TT(11,10),fire_statue,0,ENEMY_DIR_W;
+

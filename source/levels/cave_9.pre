@@ -1,0 +1,10 @@
+gfx: cave
+door: ovr_0_0, BOTTOM_TO_CAVE(12,1);
+door: cave_901,CAVE_TO_EDGE_BOTTOM_X(7,0,3);
+door: cave_902,CAVE_TO_EDGE_BOTTOM_X(12,0,26);
+
+enemy: EERAND(6,6),shieldHobgoblin,0,0;
+enemy: EERAND(6,6),shieldHobgoblin,0,0;
+
+
+dark: 1

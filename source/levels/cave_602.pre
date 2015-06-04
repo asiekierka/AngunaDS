@@ -1,0 +1,10 @@
+gfx: cave
+door: cave_6, BOTTOMEDGE;
+door: cave_603, RIGHTEDGE_TO(T(5));
+dark: 1
+
+enemy: TT(2,4),wallHugger,ITEM_RANDOM_1,0;
+enemy: TT(13,11),wallHugger,ITEM_RANDOM_1,0;
+enemy: TT(23,5),wallHugger,ITEM_RANDOM_1,0;
+enemy: TT(26,11),wallHugger,ITEM_RANDOM_1,0;
+

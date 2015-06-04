@@ -1,0 +1,7 @@
+backdrop: defaultBd
+minimap: 4,3
+
+gfx: zone1
+
+size:  1,1
+door: d5_4_4, BOTTOMEDGE;

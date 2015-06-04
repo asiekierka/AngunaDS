@@ -1,0 +1,7 @@
+gfx: zone1
+backdrop: defaultBd
+minimap: 0,0
+door: d1_3_3, LEFTEDGE;
+
+enemy: TT(9,5),map_object,ITEM_LIFE_UP|ENEMY_SAVES|ENEMY_SAVE_SLOT(69),OBJ_POT1;
+

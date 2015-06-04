@@ -1,0 +1,18 @@
+gfx: dungeonGreen
+backdrop: defaultBd
+minimap: 0,5
+
+door: d2_18, TOPEDGE;
+door: d2_20, RIGHTEDGE;
+
+enemy: TT(3,4),ghost,ITEM_RANDOM_1,0;
+enemy: TT(3,4),ghost,ITEM_RANDOM_1,0;
+enemy: TT(3,4),ghost,ITEM_RANDOM_1,0;
+enemy: TT(3,4),ghost,ITEM_RANDOM_1,0;
+enemy: TT(3,4),ghost,ITEM_RANDOM_1,0;
+enemy: TT(3,4),ghost,ITEM_RANDOM_1,0;
+enemy: TT(3,4),ghost,ITEM_RANDOM_1,0;
+
+enemy: TT(14,5),door,DOOR_VERTICAL_R | DOOR_HIDDEN, DOOR_APPEARS_AFTER | ITEM_REWARD;
+
+

@@ -1,0 +1,26 @@
+gfx: overworldGraveyard
+
+
+enemy: TT(11,8),bigmap_object,0,OBJ_TREE_DEAD_1;
+enemy: TT(16,16),bigmap_object,0,OBJ_TREE_DEAD_2;
+
+enemy: TT(22,14),graveyard_object,0,GY_BIG_GRAVE;
+
+enemy: TT(22,5),graveyard_object,0,GY_GRAVE_1;
+enemy: TT(23,4),graveyard_object,0,GY_GRAVE_4;
+enemy: TT(24,2),graveyard_object,0,GY_GRAVE_3;
+enemy: TT(24,5),graveyard_object,0,GY_GRAVE_5;
+enemy: TT(26,2),graveyard_object,0,GY_GRAVE_2;
+
+enemy: TT(6,9),graveyard_object,0,GY_GRAVE_4;
+enemy: TT(4,7),graveyard_object,0,GY_GRAVE_5;
+enemy: TT(5,6),graveyard_object,0,GY_GRAVE_4;
+
+enemy: TT(2,6),graveyard_object,0,GY_GRAVE_2;
+enemy: TT(3,5),graveyard_object,0,GY_GRAVE_4;
+
+enemy: TT(25,12),map_object,ITEM_RANDOM_1,OBJ_BUSH;
+enemy: TT(25,13),map_object,ITEM_RANDOM_1,OBJ_BUSH;
+enemy: TT(25,14),map_object,ITEM_RANDOM_1,OBJ_BUSH;
+enemy: TT(25,15),map_object,ITEM_RANDOM_1,OBJ_BUSH;
+

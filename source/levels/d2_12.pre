@@ -1,0 +1,11 @@
+gfx: dungeonGreen
+backdrop: defaultBd
+minimap: 7,0
+dark: 1
+
+door: d2_11, EDGE_BOTTOM_TO_TOP(0,0);
+
+enemy: TT(6,4),redSlime,0,0;
+enemy: TT(6,3),item,ITEM_LANTERN,ITEM_REWARD | ITEM_SAVES | 17;
+
+

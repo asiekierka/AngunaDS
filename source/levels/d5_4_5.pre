@@ -1,0 +1,10 @@
+
+enemy: T(5),T(1),map_object,0,OBJ_SKEL;
+enemy: T(8),T(1),map_object,0,OBJ_SKEL;
+
+enemy: TT(4,4),map_object,0,OBJ_BONES1;
+enemy: TT(8,6),map_object,0,OBJ_BONES2;
+enemy: TT(10,2),map_object,0,OBJ_BONES3;
+
+enemy: T(7),T(1),door,DOOR_HORIZONTAL | DOOR_YELLOW, ITEM_SAVES | 64;
+

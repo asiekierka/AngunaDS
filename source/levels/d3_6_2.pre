@@ -1,0 +1,10 @@
+enemy: TT(11,4),door,DOOR_VERTICAL_L,DOOR_APPEARS_AFTER;
+enemy: TT(10,4),door,DOOR_VERTICAL_R,DOOR_APPEARS_AFTER;
+
+enemy: EERAND(2,2),ghost,ITEM_RANDOM_1,0;
+enemy: EERAND(2,2),ghost,ITEM_RANDOM_1,0;
+enemy: EERAND(2,2),ghost,ITEM_RANDOM_1,0;
+enemy: EERAND(2,2),ghost,ITEM_RANDOM_1,0;
+enemy: EERAND(2,2),ghost,ITEM_RANDOM_1,0;
+
+enemy: TT(5,5),item,ITEM_BOOTS,ITEM_REWARD | ITEM_SAVES | 23;

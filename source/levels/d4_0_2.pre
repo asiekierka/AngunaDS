@@ -1,0 +1,3 @@
+enemy: EERAND(1,1),redogre,ITEM_RANDOM_1,0;
+
+enemy: TT(5,3),item,ITEM_KEY_RED,ITEM_REWARD | ITEM_SAVES | 34;

@@ -1,0 +1,8 @@
+
+enemy: EERAND(1,7),spit_slime,ITEM_RANDOM_1,0;
+enemy: EERAND(1,7),spit_slime,ITEM_RANDOM_1,0;
+enemy: EERAND(1,7),spit_slime,ITEM_RANDOM_1,0;
+enemy: EERAND(1,7),spit_slime,ITEM_RANDOM_1,0;
+enemy: EERAND(1,7),spit_slime,ITEM_RANDOM_1,0;
+
+enemy: TT(14,4),door,DOOR_VERTICAL_R | DOOR_HIDDEN, DOOR_APPEARS_AFTER;

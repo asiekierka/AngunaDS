@@ -1,0 +1,19 @@
+
+
+enemy: TT(17,17),map_object,ITEM_RANDOM_1,OBJ_BUSH;
+
+
+enemy: TT(27,10),map_object,ITEM_RANDOM_1,OBJ_BUSH;
+enemy: TT(27,11),map_object,ITEM_RANDOM_1,OBJ_BUSH;
+enemy: TT(27,12),map_object,ITEM_RANDOM_1,OBJ_BUSH;
+
+enemy: TT(12,4),map_object,ITEM_RANDOM_1,OBJ_BUSH;
+enemy: TT(13,4),map_object,ITEM_RANDOM_1,OBJ_BUSH;
+enemy: TT(12,5),map_object,ITEM_RANDOM_1,OBJ_BUSH;
+enemy: TT(13,5),map_object,ITEM_RANDOM_1,OBJ_BUSH;
+enemy: TT(13,6),map_object,ITEM_RANDOM_1,OBJ_BUSH;
+
+door: cave_504,CAVE_TO_EDGE_BOTTOM_X(4,12,26);
+
+
+

@@ -1,0 +1,3 @@
+door: ovr_1_0, BOTTOM_TO_CAVE(15,6);
+enemy: TT(7,4),healer,0,0;
+respawn: 1

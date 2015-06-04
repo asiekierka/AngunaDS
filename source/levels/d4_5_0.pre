@@ -1,0 +1,15 @@
+enemy:  TT(22,9),door,DOOR_HORIZONTAL | DOOR_HIDDEN, DOOR_APPEARS_AFTER; 
+
+stairs:  21,1,d4_2_4,6,4,UP;
+
+enemy: TT(5,6),trap2,0,ENEMY_DIR_E;
+enemy: TT(7,4),trap2,0,ENEMY_DIR_S;
+enemy: TT(10,3),trap2,0,ENEMY_DIR_E;
+enemy: TT(13,5),trap2,0,ENEMY_DIR_N;
+
+enemy: T(6),T(2),map_object,ITEM_RANDOM_1,OBJ_POT1;
+enemy: T(13),T(7),map_object,ITEM_RANDOM_1,OBJ_POT2;
+enemy: T(13),T(8),map_object,ITEM_RANDOM_1,OBJ_POT_DUMP1;
+
+enemy: T(18),T(3),map_object,ITEM_ATTACK_UP|ENEMY_SAVES|ENEMY_SAVE_SLOT(39),OBJ_POT1;
+

@@ -1,0 +1,12 @@
+stairs:  17,0,d4_1_1,2,3,DOWN;
+
+enemy: EERAND(1,1),attack_ghost,ITEM_RANDOM_1,0;
+enemy: EERAND(1,1),attack_ghost,ITEM_RANDOM_1,0;
+enemy: EERAND(1,1),attack_ghost,ITEM_RANDOM_1,0;
+enemy: EERAND(1,1),attack_ghost,ITEM_RANDOM_1,0;
+
+enemy: EERAND(1,1),darkvampire,ITEM_RANDOM_1,0;
+
+enemy:  TT(7,9),door,DOOR_HORIZONTAL | DOOR_BLUE, ITEM_SAVES | 38;
+
+dark: 1

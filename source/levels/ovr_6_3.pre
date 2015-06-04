@@ -1,0 +1,10 @@
+gfx: overworldRocky
+
+
+noEnemies;
+
+respawn: 1
+
+
+enemy: TT(13,16),map_object,ITEM_RANDOM_1,OBJ_CACTUS;
+enemy: TT(6,10),map_object,ITEM_RANDOM_1,OBJ_CACTUS;

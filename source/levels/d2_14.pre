@@ -1,0 +1,12 @@
+gfx: dungeonGreen
+backdrop: defaultBd
+minimap: 0,3
+dark: 1
+
+door: d2_13, TOPEDGE;
+door: d2_15, RIGHTEDGE;
+door: d2_18, BOTTOMEDGE;
+
+enemy: TT(5,5),map_object,0,OBJ_CRATE1;
+
+

@@ -1,0 +1,20 @@
+
+enemy: TT(18,1),map_object,ITEM_RANDOM_1,OBJ_BUSH;
+enemy: TT(19,1),map_object,ITEM_RANDOM_1,OBJ_BUSH;
+enemy: TT(20,1),map_object,ITEM_RANDOM_1,OBJ_BUSH;
+enemy: TT(21,1),map_object,ITEM_RANDOM_1,OBJ_BUSH;
+enemy: TT(22,1),map_object,ITEM_RANDOM_1,OBJ_BUSH;
+enemy: TT(23,1),map_object,ITEM_RANDOM_1,OBJ_BUSH;
+
+enemy: TT(19,2),map_object,ITEM_RANDOM_1,OBJ_BUSH;
+enemy: TT(20,2),map_object,ITEM_RANDOM_1,OBJ_BUSH;
+enemy: TT(21,2),map_object,ITEM_RANDOM_1,OBJ_BUSH;
+enemy: TT(22,2),map_object,ITEM_RANDOM_1,OBJ_BUSH;
+enemy: TT(23,2),map_object,ITEM_RANDOM_1,OBJ_BUSH;
+enemy: TT(24,2),map_object,ITEM_RANDOM_1,OBJ_BUSH;
+
+enemy: TT(21,3),map_object,ITEM_RANDOM_1,OBJ_BUSH;
+enemy: TT(22,3),map_object,ITEM_DEFENCE_UP|ENEMY_SAVES|ENEMY_SAVE_SLOT(46),OBJ_BUSH;
+
+
+

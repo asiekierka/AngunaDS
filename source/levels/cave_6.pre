@@ -1,0 +1,11 @@
+gfx: cave
+door: ovr_7_4, BOTTOM_TO_CAVE(8,2);
+door: cave_602, TOPEDGE;
+door: cave_601, RIGHTEDGE_TO(T(5));
+dark: 1
+
+
+enemy: TT(2,1),wallHugger,ITEM_RANDOM_1,0;
+enemy: TT(8,11),wallHugger,ITEM_RANDOM_1,0;
+enemy: TT(23,1),wallHugger,ITEM_RANDOM_1,0;
+

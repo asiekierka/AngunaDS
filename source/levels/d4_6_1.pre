@@ -1,0 +1,10 @@
+enemy: TT(14,4),door,DOOR_VERTICAL_R | DOOR_INVIS,DOOR_FAKE;
+
+enemy: TT(1,2),fire_statue,0,ENEMY_DIR_E;
+enemy: TT(12,8),fire_statue,0,ENEMY_DIR_W;
+
+enemy: TT(1,1),attack_ghost,ITEM_RANDOM_1,0;
+enemy: TT(1,1),attack_ghost,ITEM_RANDOM_1,0;
+enemy: TT(1,1),attack_ghost,ITEM_RANDOM_1,0;
+enemy: TT(1,1),attack_ghost,ITEM_RANDOM_1,0;
+enemy: TT(1,1),attack_ghost,ITEM_RANDOM_1,0;

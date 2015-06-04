@@ -1,0 +1,7 @@
+
+enemy: TT(7,5),crab,ENEMY_SAVES|ENEMY_SAVE_SLOT(67),0;
+enemy: TT(3,5),crabblob,0,0;
+enemy: TT(2,7),crabblob,0,0;
+enemy: TT(5,14),crabblob,0,0;
+enemy: TT(7,7),crabblob,0,0;
+enemy: TT(9,6),item,ITEM_KEY_YELLOW,ITEM_REWARD | ITEM_SAVES | 81;

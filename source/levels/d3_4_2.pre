@@ -1,0 +1,3 @@
+enemy:  TT(9,4),redSlime,ITEM_RANDOM_1,0;
+
+enemy: TT(1,2),switch,SWITCH_TOGGLE(1),ITEM_REWARD;

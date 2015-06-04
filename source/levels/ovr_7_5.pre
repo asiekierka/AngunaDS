@@ -1,0 +1,4 @@
+gfx: overworldRocky
+
+enemy: TT(5,15),map_object,ITEM_RANDOM_1,OBJ_CACTUS;
+enemy: TT(19,17),map_object,ITEM_RANDOM_1,OBJ_CACTUS;

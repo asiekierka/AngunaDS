@@ -1,0 +1,10 @@
+enemy: T(9),T(8),map_object,0,OBJ_SKULL1;
+enemy: T(12),T(4),map_object,0,OBJ_BONES2;
+enemy: T(9),T(7),map_object,0,OBJ_BONES1;
+enemy: T(4),T(3),map_object,0,OBJ_BONES3;
+enemy: T(12),T(6),map_object,0,OBJ_SKULL2;
+enemy: T(9),T(5),map_object,0,OBJ_BONES4;
+enemy: T(3),T(8),map_object,0,OBJ_BONES5;
+
+enemy: T(4),T(1),map_object,0,OBJ_SKEL;
+enemy: T(9),T(1),map_object,0,OBJ_SKEL;

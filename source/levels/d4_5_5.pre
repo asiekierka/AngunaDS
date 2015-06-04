@@ -1,0 +1,4 @@
+enemy: TT(7,9),door,DOOR_HORIZONTAL | DOOR_INVIS,DOOR_FAKE;
+enemy: TT(7,5),switch,SWITCH_TOGGLE(5),0;
+
+dark: 1

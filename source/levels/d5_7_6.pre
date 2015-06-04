@@ -1,0 +1,7 @@
+enemy: T(7),T(1),door,DOOR_HORIZONTAL,ITEM_REWARD | DOOR_APPEARS_BEFORE;
+
+enemy: TT(7,3),crab,0,0;
+enemy: TT(3,7),crabblob,0,0;
+enemy: TT(2,7),crabblob,0,0;
+enemy: TT(5,14),crabblob,0,0;
+enemy: TT(7,7),crabblob,0,0;

@@ -1,0 +1,20 @@
+gfx: dungeonGreen
+backdrop: defaultBd
+minimap: 0,2
+dark: 1
+
+door: d2_17, EDGE_RIGHT_TO_LEFT(0,0);
+door: d2_14, BOTTOMEDGE;
+
+enemy: TT(2,9),door,DOOR_HORIZONTAL,DOOR_APPEARS_AFTER | ITEM_REWARD;
+enemy: TT(12,9),door,DOOR_HORIZONTAL,DOOR_APPEARS_AFTER | ITEM_REWARD;
+
+enemy: TT(7,2),map_object,ITEM_RANDOM_1,OBJ_POT1;
+enemy: TT(8,2),map_object,ITEM_RANDOM_1,OBJ_POT2;
+enemy: TT(3,3),redSlime,0,2;
+
+enemy: TT(6,3),ghost,ITEM_RANDOM_1,0;
+enemy: TT(6,3),ghost,ITEM_RANDOM_1,0;
+enemy: TT(11,7),zipper,ITEM_RANDOM_1,0;
+
+

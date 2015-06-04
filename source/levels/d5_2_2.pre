@@ -1,0 +1,15 @@
+
+door: ovr_5_0, BOTTOM_TO_CAVE(13,4);
+respawn: 1
+
+enemy: TT(1,3),statue,0,ENEMY_DIR_E;
+enemy: TT(1,7),statue,0,ENEMY_DIR_E;
+
+enemy: TT(12,3),statue,0,ENEMY_DIR_W;
+enemy: TT(12,7),statue,0,ENEMY_DIR_W;
+
+enemy: T(5),T(14),map_object,0,OBJ_SKEL;
+enemy: T(8),T(14),map_object,0,OBJ_SKEL;
+
+enemy: T(7),T(1),door,DOOR_HORIZONTAL | DOOR_YELLOW, ITEM_SAVES | 62;
+

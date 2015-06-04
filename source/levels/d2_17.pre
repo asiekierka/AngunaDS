@@ -1,0 +1,11 @@
+gfx: dungeonGreen
+backdrop: defaultBd
+minimap: 1,2
+
+door: d2_13, EDGE_LEFT_TO_RIGHT(0,0);
+door: d2_5, RIGHTEDGE;
+
+enemy: TT(7,4),item,ITEM_MEAT,ITEM_SAVES|ZONESAVE(3);
+
+enemy: TT(4,3),bat,ITEM_RANDOM_1,0;
+enemy: TT(10,3),bat,ITEM_RANDOM_1,0;

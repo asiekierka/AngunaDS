@@ -1,0 +1,23 @@
+gfx: dungeonGreen
+backdrop: defaultBd
+minimap: 7,1
+dark: 1
+
+door: d2_9, EDGE_LEFT_TO_RIGHT(0,0);
+door: d2_10, EDGE_BOTTOM_TO_TOP(0,0);
+door: d2_12, EDGE_TOP_TO_BOTTOM(0,0);
+
+
+enemy: TT(7,5),switch,0,SWITCH_DOOR(1);
+enemy: TT(0,4),door,DOOR_VERTICAL_L|DOOR_HIDDEN,DOOR_APPEARS_BEFORE;
+
+enemy: TT(7,1),door,DOOR_HORIZONTAL|DOOR_BLUE,ITEM_SAVES|16;
+
+
+enemy: TT(6,2),bat,0,0;
+enemy: TT(7,5),bat,ITEM_RANDOM_1,0;
+enemy: TT(11,4),bat,ITEM_RANDOM_1,0;
+
+enemy: TT(1,6),map_object,ITEM_RANDOM_1,OBJ_POT1;
+enemy: TT(1,5),map_object,ITEM_RANDOM_1,OBJ_POT2;
+

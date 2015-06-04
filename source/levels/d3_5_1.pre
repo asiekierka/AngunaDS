@@ -1,0 +1,10 @@
+enemy: TT(2,3),wallHugger,ITEM_RANDOM_1,0;
+enemy: TT(1,2),wallHugger,ITEM_RANDOM_1,0;
+enemy: TT(4,6),wallHugger,ITEM_RANDOM_1,0;
+enemy: TT(6,4),wallHugger,ITEM_RANDOM_1,0;
+enemy: TT(9,5),wallHugger,ITEM_RANDOM_1,0;
+enemy: TT(10,6),wallHugger,ITEM_RANDOM_1,0;
+enemy: TT(11,14),wallHugger,ITEM_RANDOM_1,0;
+
+#enemy: TT(0,4),door,DOOR_VERTICAL_L | DOOR_HIDDEN | DOOR_TOGGLE(2) | DOOR_TOGGLE_FLIP,0;
+

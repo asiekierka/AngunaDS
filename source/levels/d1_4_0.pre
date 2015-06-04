@@ -1,0 +1,12 @@
+gfx: zone1
+backdrop: defaultBd
+minimap: 0,0
+door: d1_4_1, BOTTOMEDGE;
+door: d1_3_0, LEFTEDGE;
+
+enemy: L(14),L(4),ogre,ITEM_RANDOM_1,0;
+enemy: L(4),L(6),bat,ITEM_RANDOM_1,0;
+enemy: L(12),T(4),bat,ITEM_RANDOM_1,0;
+
+enemy: T(0),T(4),door,DOOR_VERTICAL_L | DOOR_INVIS, DOOR_APPEARS_BEFORE | ITEM_REWARD;
+enemy: T(9),T(9),door,DOOR_HORIZONTAL | DOOR_HIDDEN,0;

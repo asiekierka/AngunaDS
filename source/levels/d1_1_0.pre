@@ -1,0 +1,8 @@
+gfx: zone1
+backdrop: defaultBd
+minimap: 0,0
+
+door: d1_0_0, LEFTEDGE;
+door: d1_0_1, EDGE_BOTTOM_TO_TOP(0,1);
+
+enemy: T(13),T(3),item,ITEM_ATTACK_UP,ITEM_SAVES | 7;

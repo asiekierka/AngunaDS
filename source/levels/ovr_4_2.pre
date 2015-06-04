@@ -1,0 +1,6 @@
+
+noEnemies;
+
+respawn: 1
+
+door: d1_0_3,CAVE_TO_EDGE_BOTTOM(10,0);
