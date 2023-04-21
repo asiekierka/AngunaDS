@@ -8,8 +8,8 @@ BLOCKSDSEXT	?= /opt/blocksds/external
 # Source code paths
 # -----------------
 
-SOURCEDIRS	:= arm7/source common/source
-INCLUDEDIRS	:= common/include
+SOURCEDIRS	:= arm7/source
+INCLUDEDIRS	:= arm7/source
 BINDIRS		:=
 
 # Defines passed to all files

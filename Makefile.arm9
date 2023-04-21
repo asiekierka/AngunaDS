@@ -8,7 +8,7 @@ BLOCKSDSEXT	?= /opt/blocksds/external
 # Source code paths
 # -----------------
 
-SOURCEDIRS	:= source
+SOURCEDIRS	:= source source/audio source/enemies source/gfx source/levels/zones
 INCLUDEDIRS	:= source build/arm9/source
 GFXDIRS		:=
 BINDIRS		:=
@@ -73,9 +73,15 @@ ifneq ($(AUDIODIRS),)
     endif
 endif
 
-SOURCES_S	:= $(shell find -L $(SOURCEDIRS) -name "*.s")
-SOURCES_C	:= $(shell find -L $(SOURCEDIRS) -name "*.c")
-SOURCES_CPP	:= $(shell find -L $(SOURCEDIRS) -name "*.cpp")
+SOURCES_S	:= $(shell find -L $(SOURCEDIRS) -maxdepth 1 -name "*.s")
+SOURCES_C	:= $(shell find -L $(SOURCEDIRS) -maxdepth 1 -name "*.c")
+SOURCES_CPP	:= $(shell find -L $(SOURCEDIRS) -maxdepth 1 -name "*.cpp")
+
+# AngunaDS-specific
+
+LEVELSC = $(patsubst %.fmp,%.c, $(wildcard source/levels/*.fmp))
+LEVELGFXC = $(patsubst %.png,%.c, $(wildcard source/gfx/levelGfx/png/*.png))
+SOURCES_C += $(LEVELSC) $(LEVELGFXC)
 
 # Compiler and linker flags
 # -------------------------
@@ -102,17 +108,18 @@ ASFLAGS		+= -x assembler-with-cpp $(DEFINES) $(ARCH) \
 		   -ffunction-sections -fdata-sections
 
 CFLAGS		+= -std=gnu11 $(WARNFLAGS) $(DEFINES) $(ARCH) \
-		   -mthumb -mthumb-interwork $(INCLUDEFLAGS) -O2 \
+		   -mthumb -mthumb-interwork $(INCLUDEFLAGS) -g -O2 \
 		   -ffunction-sections -fdata-sections \
 		   -fomit-frame-pointer
 
 CXXFLAGS	+= -std=gnu++14 $(WARNFLAGS) $(DEFINES) $(ARCH) \
-		   -mthumb -mthumb-interwork $(INCLUDEFLAGS) -O2 \
+		   -mthumb -mthumb-interwork $(INCLUDEFLAGS) -g -O2 \
 		   -ffunction-sections -fdata-sections \
 		   -fno-exceptions -fno-rtti \
 		   -fomit-frame-pointer
 
-LDFLAGS		:= -mthumb -mthumb-interwork $(LIBDIRSFLAGS) \
+LDFLAGS		:= -Wl,--defsym=vfprintf=__i_vfprintf -Wl,--defsym=vfscanf=__i_vfscanf \
+		   -mthumb -mthumb-interwork $(LIBDIRSFLAGS) \
 		   -Wl,-Map,$(MAP) -Wl,--gc-sections -nostdlib \
 		   -T$(BLOCKSDS)/sys/crts/ds_arm9.mem \
 		   -T$(BLOCKSDS)/sys/crts/ds_arm9.ld \
@@ -211,6 +218,7 @@ $(SOUNDBANKDIR)/soundbank.c.o: $(SOUNDBANKDIR)/soundbank.h
 # -------------------------
 
 WINE=wine
+PERL=perl
 
 OBJS_WAVS		:= $(addprefix $(BUILDDIR)/,$(patsubst %.wav,%.wav.o, $(wildcard source/audio/wavs/*.wav)))
 HEADERS_WAVS		:= $(addprefix $(BUILDDIR)/,$(patsubst %.wav,%_wav.h, $(wildcard source/audio/wavs/*.wav)))
@@ -239,6 +247,24 @@ $(BUILDDIR)/source/enemies/portraits/%_portrait.o $(BUILDDIR)/source/enemies/por
 		-imgBpp 4 -metaWidth 1 -metaHeight 1 -palStart 0 -palEnd 63
 	$(V)$(CC) $(CFLAGS) -MMD -MP -c $(BUILDDIR)/$(patsubst %.png,%_portrait.c,$<) \
 		-o $(BUILDDIR)/$(patsubst %.png,%_portrait.o,$<)
+
+# These were beyond cleaning up...
+
+LEVELGFXH = $(patsubst %.pre,%.h, $(wildcard source/gfx/levelGfx/*.pre))
+HEADERS_ASSETS += $(LEVELGFXH)
+
+source/gfx/levelGfx/%.h source/gfx/levelGfx/%.c: source/gfx/levelGfx/%.pre source/gfx/levelGfx/makefile source/gfx/levelGfx/buildLevelGfx.pl
+	cd source/gfx/levelGfx && make
+
+source/gfx/levelGfx/png/%.c : source/gfx/levelGfx/png/%.png
+	cd source/gfx/levelGfx && make
+
+%.c : %.fmp %.pre %.dor $(patsubst %.pre,%.h, $(wildcard source/gfx/levelGfx/*.pre)) source/levels/buildRooms.pl source/levels/overworldEnemies.txt source/levels/standardHeader.h $(LEVELGFXH)
+	$(WINE) source/levels/fmp2gba.exe $< $@.tmp $(patsubst source/levels/%.c,level_%, $@) NOGFX
+	$(PERL) source/levels/buildRooms.pl lvl=$(patsubst source/levels/%.c,%, $@) mode=16px
+
+$(LEVELGFXH) : $(patsubst %.h,%pre,$@)
+	cd source/gfx/levelGfx && make
 
 # All assets must be built before the source code
 # -----------------------------------------------
