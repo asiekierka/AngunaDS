@@ -7,7 +7,7 @@
 #include "../sound.h"
 #include "bossGfx.h"
 #include "crockyGfx.h"
-#include "portraits/boss_portrait.h"
+#include "enemies/portraits/boss_portrait.h"
 
 #define Frame(x) (void *)&(enemyBossCharFrames[x])
 #define Anim(x) (void *)&(enemyBossCharAnim[x])

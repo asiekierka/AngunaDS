@@ -375,7 +375,7 @@ void setLevelWithMosaic(LevelData * level, int startX, int startY, bool forceMos
 		loadBlankBGPaletteLine(ALL_BLACK_PAL_NUM);
 		initBackground(&bgMain, BG_MAIN_NUM);
 		bgMain.colorMode = BG_COLOR_16;
-		bgMain.size = TEXTBG_SIZE_512x256;
+		bgMain.size = BgSize_T_512x256;
 		enableBackground(&bgMain);
 		loadBGTiles(&bgMain, (u32*)level->tileGfx, 1024);
 		zeroBGMap(&bgMain, 32*2);	
@@ -383,7 +383,7 @@ void setLevelWithMosaic(LevelData * level, int startX, int startY, bool forceMos
 		bgForeground.priority = 1;
 		bgForeground.mapBlock = 26;
 		bgForeground.colorMode = BG_COLOR_16;
-		bgForeground.size = TEXTBG_SIZE_512x256;
+		bgForeground.size = BgSize_T_512x256;
 		enableBackground(&bgForeground);
 		bgMain.foreground = &bgForeground;
 		doneLevelInit = LEVEL_INIT_NOW;

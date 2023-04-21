@@ -5,7 +5,7 @@
 #include "../characters.h"
 #include "../shop.h"
 #include "vampireGfx.h"
-#include "portraits/ogre_portrait.h"
+#include "enemies/portraits/ogre_portrait.h"
 
 #define Frame(x) (void *)&(enemyShopCharFrames[x])
 #define Anim(x) (void *)&(enemyShopCharAnim[x])

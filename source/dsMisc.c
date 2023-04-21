@@ -1,5 +1,6 @@
 #include <nds.h>
 #include "bgDefines.h"
+#include "input.h"
 
 #define BLEND_BG_BEHIND(x) (1 << ((x) + 8))
 #define NICE_BLEND_LEVELS (0x0509);
@@ -13,14 +14,14 @@ void initDsIrq()
 {
 
 	//irqs are nice
-	irqInit();
+	//irqInit();
 	irqSet(IRQ_VBLANK, vblank);
 }
 
 void initDsVideo()
 {
 	//turn everything on
-	powerON(POWER_ALL_2D);
+	powerOn(POWER_ALL_2D);
 
     vramSetMainBanks(VRAM_A_MAIN_BG_0x06000000,
                      VRAM_B_MAIN_BG,
@@ -53,11 +54,11 @@ void setDsGfxModeStandard()
 	DISPLAY_SPR_1D_BMP //and this in bitmap mode
 	);
 
-	BLEND_CR = BLEND_ALPHA | BLEND_BG_BEHIND(BG_MAIN_NUM);
-	BLEND_AB = NICE_BLEND_LEVELS;
+	REG_BLDCNT = BLEND_ALPHA | BLEND_BG_BEHIND(BG_MAIN_NUM);
+	REG_BLDALPHA = NICE_BLEND_LEVELS;
 
-	SUB_BLEND_CR = BLEND_ALPHA | BLEND_BG_BEHIND(BG_MAIN_NUM);
-	SUB_BLEND_AB = NICE_BLEND_LEVELS;
+	REG_BLDCNT_SUB = BLEND_ALPHA | BLEND_BG_BEHIND(BG_MAIN_NUM);
+	REG_BLDALPHA_SUB = NICE_BLEND_LEVELS;
 
 
 }
@@ -65,38 +66,7 @@ void setDsGfxModeStandard()
 
 void setDsGfxModeSplash()
 {
-	BLEND_CR = 0x440;
-	BLEND_AB = NICE_BLEND_LEVELS;
+	REG_BLDCNT = 0x440;
+	REG_BLDALPHA = NICE_BLEND_LEVELS;
 }
 
-void lidSleep()
-{
-   __asm(".arm"); 
-   __asm("mcr p15,0,r0,c7,c0,4");
-   __asm("mov r0, r0");
-   __asm("BX lr");
-}
-
-// when reading keys
-void checkLidSleep()
-{
-	if (isKeyDown( KEY_LID)) {
-	   /* hinge is closed */
-	   /* set only key irq for waking up */
-	   unsigned long oldIE = REG_IE;
-	   REG_IE = IRQ_KEYS;
-	   *(volatile unsigned short *)0x04000132 = BIT(14) | 255; /* any of the inner keys might irq */
-	   /* power off everything not needed */
-	   powerOFF(POWER_LCD);
-	   /* set system into sleep */
-	   swiWaitForIRQ();
-	   /* wait a bit until returning power */
-	   while (REG_VCOUNT!=0);
-	   while (REG_VCOUNT==0);
-	   while (REG_VCOUNT!=0);
-	   /* power on again */
-	   powerON(POWER_LCD);
-	   /* set up old irqs again */
-	   REG_IE = oldIE;
-	} 
-}

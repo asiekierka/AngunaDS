@@ -23,10 +23,11 @@ MODULE* overworldMod = 0;
 MODULE* fredMod = 0;
 */
 
+/*
 XM7_ModuleManager_Type dungeonMM;
 XM7_ModuleManager_Type fredMM;
 XM7_ModuleManager_Type overworldMM;
-
+*/
 
 // called by the drivers in mikmod library
 void MikMod9_SendCommand(u32 command)
@@ -50,9 +51,11 @@ void initMikMod()
 {
 	REG_IPC_FIFO_CR = IPC_FIFO_ENABLE | IPC_FIFO_SEND_CLEAR;
 
+/*
 	XM7_LoadXM(&dungeonMM, (XM7_XMModuleHeader_Type*)dungeon_bin);
 	XM7_LoadXM(&fredMM, (XM7_XMModuleHeader_Type*)fred_bin);
 	XM7_LoadXM(&overworldMM, (XM7_XMModuleHeader_Type*)overworld_bin);
+*/
 
 	//MikMod_RegisterDriver(&drv_nds_hw);
 
@@ -73,6 +76,7 @@ void playMikModSong(int song)
 	}
 	lastSong = song;
 
+/*
 	if (song == MUSIC_OVERWORLD)
 	{
 		MikMod9_SendCommand((u32)&overworldMM);
@@ -85,6 +89,7 @@ void playMikModSong(int song)
 	{
 		MikMod9_SendCommand((u32)&fredMM);
 	}
+*/
 	//make sure mikMod is init'd 
 	//if (dungeonMod == 0)
 	//{

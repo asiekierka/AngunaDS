@@ -17,7 +17,7 @@ while(<IN>)
 	chomp;
 	@parts = split(/: /);
 	$kw = $parts[0];
-	$body = $parts[1];
+	$body = trim($parts[1]);
 	switch ($kw)
 	{
 		case "collide"
@@ -59,12 +59,16 @@ $imageSrc = "png/$imgId";
 $imgFile = "png/$imgId.png";
 $imageId = $imgId;
 
+print "img src: $imageSrc\n";
+print "img file $imgFile\n";
+print "img id $imageId\n";
+
 if (!(-f "$imageSrc.c"))
 {
 
 	$newNum = $1 * 4;
-	print "../../tools/map/wingitCLI.exe -img	$imgFile -output $imageSrc -symbol ${imageId}_ -noMap -imgBpp 4 -noHeader\n";
-	`../../tools/map/wingitCLI.exe -img	$imgFile -output $imageSrc -symbol ${imageId}_ -noMap -imgBpp 4 -noHeader`;
+    print "running: ../../tools/map/wingitCLI.exe -img $imgFile -output $imageSrc -symbol ${imageId}_ -noMap -imgBpp 4 -noHeader\n";
+	print `wine ../../tools/map/wingitCLI.exe -img $imgFile -output $imageSrc -symbol ${imageId}_ -noMap -imgBpp 4 -noHeader`;
 
 	rename("$imageSrc.c", "$imageSrc.c.7c1f");
 	open(RAW, "<$imageSrc.c.7c1f") or die "could not open $imageSrc.c.7c1f";
@@ -100,13 +104,4 @@ open(CFILE, ">$id".".h") or die "could not open $id.h";
 }
 
 
-sub trim($)
-{
-	my $string = shift;
-	$string =~ s/^\s+//;
-	$string =~ s/\s+$//;
-	return $string;
-}
-
-
-
+sub  trim { my $s = shift; $s =~ s/^\s+|\s+$//g; return $s };

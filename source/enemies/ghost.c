@@ -5,7 +5,7 @@
 #include "../misc.h"
 #include "../characters.h"
 #include "../mainChar.h"
-#include "portraits/ghost_portrait.h"
+#include "enemies/portraits/ghost_portrait.h"
 #include "../level.h"
 
 #define Frame(x) (void *)&(enemyGhostCharFrames[x])

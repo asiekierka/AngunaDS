@@ -9,7 +9,7 @@
 #include "../mainChar.h"
 #include "../level.h"
 #include "itemGfx.h"
-#include "portraits/shieldHobgoblin_portrait.h"
+#include "enemies/portraits/shieldHobgoblin_portrait.h"
 
 #define Frame(x) (void *)&(enemyShieldHobgoblinCharFrames[x])
 #define Anim(x) (void *)&(enemyShieldHobgoblinCharAnim[x])

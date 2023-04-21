@@ -1,0 +1,5 @@
+source/gfx/levelGfx/*.h
+source/gfx/levelGfx/png/*.c
+source/gfx/levelGfx/png/*.c.7c1f
+source/levels/*.c
+source/levels/*.c.tmp

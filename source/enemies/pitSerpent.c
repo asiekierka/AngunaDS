@@ -4,7 +4,7 @@
 #include "crockyGfx.h"
 #include "../misc.h"
 #include "../characters.h"
-#include "portraits/crocky_portrait.h"
+#include "enemies/portraits/crocky_portrait.h"
 
 #define Frame(x) (void *)&(enemyPitSerpentCharFrames[x])
 #define Anim(x) (void *)&(enemyPitSerpentCharAnim[x])

@@ -4,7 +4,7 @@
 #include "bossBatGfx.h"
 #include "../misc.h"
 #include "../characters.h"
-#include "portraits/batBoss_portrait.h"
+#include "enemies/portraits/batBoss_portrait.h"
 
 #define Frame(x) (void *)&(enemyGiantBatCharFrames[x])
 #define Anim(x) (void *)&(enemyGiantBatCharAnim[x])

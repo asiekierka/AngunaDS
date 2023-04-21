@@ -7,10 +7,10 @@
 #include "subscreen.h"
 #include "memcpy.h"
 
-
-
 extern const unsigned short alphabet_graphics;
 
+Bg * textLayer;
+Bg * subTextLayer;
 
 Bg textLayerBg;
 Bg subTextLayerBg;
@@ -21,16 +21,16 @@ void initText()
 	initBackground(textLayer, 0);
 	textLayer->tileBlock = 2;
 	textLayer->mapBlock = 24;
-	textLayer->size = TEXTBG_SIZE_256x256;
-	textLayer->colorMode = BG_16_COLOR;
+	textLayer->size = BgSize_T_256x256;
+	textLayer->colorMode = BG_COLOR_16;
 	textLayer->isSub = false;
 
 	subTextLayer = &subTextLayerBg;
 	initBackground(subTextLayer, 0);
 	subTextLayer->tileBlock = 2;
 	subTextLayer->mapBlock = 24;
-	subTextLayer->size = TEXTBG_SIZE_256x256;
-	subTextLayer->colorMode = BG_16_COLOR;
+	subTextLayer->size = BgSize_T_256x256;
+	subTextLayer->colorMode = BG_COLOR_16;
 	subTextLayer->isSub = true;
 
 

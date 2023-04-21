@@ -44,12 +44,12 @@ void setWin1Items(u8 items)
 
 void activateWindow(u8 window)
 {
-	DISPLAY_CR |= (1 << (window));
+	REG_DISPCNT |= (1 << (window));
 }
 
 void deactivateWindow(u8 window)
 {
-	DISPLAY_CR &= (~(1 << (window)));
+	REG_DISPCNT &= (~(1 << (window)));
 }
 
 void setWin0Coords(u8 x1, u8 x2, u8 y1, u8 y2)

@@ -6,7 +6,7 @@
 #include "../characters.h"
 #include "../sound.h"
 #include "../mainChar.h"
-#include "portraits/slime_portrait.h"
+#include "enemies/portraits/slime_portrait.h"
 
 #define Frame(x) (void *)&(enemySpitSlimeCharFrames[x])
 #define Anim(x) (void *)&(enemySpitSlimeCharAnim[x])

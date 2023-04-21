@@ -21,6 +21,6 @@ extern const unsigned short angelPal[16];
 extern const unsigned short angelTiles[2048];
 
 
-const characterAnimDef * AngelAnim;
+extern const characterAnimDef * AngelAnim;
 #endif // __ANGEL__
 

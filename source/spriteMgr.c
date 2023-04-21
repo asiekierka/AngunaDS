@@ -68,20 +68,20 @@ void enableSprites() {
 	//enable sprites, and set to 2D mapping mode
 	//why use 2d?  it's just easier for the graphics configuration,
 	//I can deal with the slightly harder code
-	DISPLAY_CR |= DISPLAY_SPR_ACTIVE | DISPLAY_SPR_2D;
-	SUB_DISPLAY_CR |= DISPLAY_SPR_ACTIVE | DISPLAY_SPR_2D;
+	REG_DISPCNT |= DISPLAY_SPR_ACTIVE | DISPLAY_SPR_2D;
+	REG_DISPCNT_SUB |= DISPLAY_SPR_ACTIVE | DISPLAY_SPR_2D;
 }
 
 void disableSprites() {
 	//turn off the sprites (why would you want to do this?  maybe title screen)
-	DISPLAY_CR &= ~DISPLAY_SPR_ACTIVE;
-	SUB_DISPLAY_CR &= ~DISPLAY_SPR_ACTIVE;
+	REG_DISPCNT &= ~DISPLAY_SPR_ACTIVE;
+	REG_DISPCNT_SUB &= ~DISPLAY_SPR_ACTIVE;
 
 }
 
 void disableMainSprites() {
 	//turn off the sprites (why would you want to do this?  maybe title screen)
-	DISPLAY_CR &= ~DISPLAY_SPR_ACTIVE;
+	REG_DISPCNT &= ~DISPLAY_SPR_ACTIVE;
 }
 
 void setSpritePalette(Sprite * sprite, PaletteId id) {

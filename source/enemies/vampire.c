@@ -4,7 +4,7 @@
 #include "vampireGfx.h"
 #include "../misc.h"
 #include "../characters.h"
-#include "portraits/vampire_portrait.h"
+#include "enemies/portraits/vampire_portrait.h"
 
 #define Frame(x) (void *)&(enemyVampireCharFrames[x])
 #define Anim(x) (void *)&(enemyVampireCharAnim[x])

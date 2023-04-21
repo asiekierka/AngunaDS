@@ -4,7 +4,7 @@
 #include "ogreGfx.h"
 #include "../misc.h"
 #include "../characters.h"
-#include "portraits/ogre_portrait.h"
+#include "enemies/portraits/ogre_portrait.h"
 
 #define Frame(x) (void *)&(enemyOgreCharFrames[x])
 #define Anim(x) (void *)&(enemyOgreCharAnim[x])

@@ -4,7 +4,7 @@
 #include "slimeGfx.h"
 #include "../misc.h"
 #include "../characters.h"
-#include "portraits/slime_portrait.h"
+#include "enemies/portraits/slime_portrait.h"
 
 #define RED_SLIME_DEFAULT_SPAWNS 3
 #define SLIME_GET_BORED_TICKS 10

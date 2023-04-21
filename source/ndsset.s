@@ -27,12 +27,15 @@
 	.align
 
 	@ *** 8-bit entry point ***
+	.type ndsset, %function
 ndsset:
 	orr		r0, r0, lsl #8
 	@ *** 16-bit entry point ***
+	.type ndsset16, %function
 ndsset16:
 	orr		r0, r0, lsl #16
 	@ *** 32-bit entry point ***
+	.type ndsset32, %function
 ndsset32:
 	cmp		r2, #0
 	bxeq	lr

@@ -22,6 +22,7 @@
 	.arm
 	.balign 32
 	.global ndscpy
+	.type ndscpy, %function
 ndscpy:
 	cmp		r2, #0
 	bxeq	lr

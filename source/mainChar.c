@@ -106,6 +106,8 @@ extern const characterAnimDef * mainCharAnimItemE;
 extern const characterAnimDef * mainCharAnimItemW;
 
 
+u16 * gfxToReload;
+
 Sprite * mcSprite[MC_MAX_NECESSARY_SPRITES];
 Sprite * currentItemSprite;
 

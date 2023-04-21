@@ -5,7 +5,7 @@
 #include "../characters.h"
 #include "../healer.h"
 #include "vampireGfx.h"
-#include "portraits/ogre_portrait.h"
+#include "enemies/portraits/ogre_portrait.h"
 
 #define Frame(x) (void *)&(enemyHealerCharFrames[x])
 #define Anim(x) (void *)&(enemyHealerCharAnim[x])

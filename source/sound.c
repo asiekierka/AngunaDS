@@ -100,7 +100,8 @@ int getSoundEffectFrequency(int effect)
 
 void playGameSfx(int effect)
 {
-	TransferSoundData sound;
+// TODO asie
+/*	TransferSoundData sound;
 	sound.data = getSoundEffect(effect);
 	sound.len = getSoundEffectLength(effect);
 	sound.rate = getSoundEffectFrequency(effect);
@@ -111,7 +112,7 @@ void playGameSfx(int effect)
 	{
 		playSound(&sound);
 	}
-
+*/
 }
 
 void playMusic(int song)

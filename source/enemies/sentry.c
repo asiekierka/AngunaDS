@@ -7,7 +7,7 @@
 #include "../mainChar.h"
 #include "../level.h"
 #include "itemGfx.h"
-#include "portraits/sentry_portrait.h"
+#include "enemies/portraits/sentry_portrait.h"
 
 #define Frame(x) (void *)&(enemySentryCharFrames[x])
 #define Anim(x) (void *)&(enemySentryCharAnim[x])

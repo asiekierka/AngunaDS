@@ -6,7 +6,7 @@
 #include "../characters.h"
 #include "../mainChar.h"
 #include "../bullet.h"
-#include "portraits/crocky_portrait.h"
+#include "enemies/portraits/crocky_portrait.h"
 
 #define Frame(x) (void *)&(enemyCrockyCharFrames[x])
 #define Anim(x) (void *)&(enemyCrockyCharAnim[x])

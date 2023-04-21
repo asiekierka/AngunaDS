@@ -7,8 +7,8 @@
 
 #define TEXT_LINES(x) ((char **)(x))
 
-Bg * textLayer;
-Bg * subTextLayer;
+extern Bg * textLayer;
+extern Bg * subTextLayer;
 
 void initText();
 

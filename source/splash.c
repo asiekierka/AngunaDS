@@ -83,7 +83,7 @@ void showTileSplashScreenSub(void * gfx, void * pal, void * map, int yAdjust)
 
 	bg->tileBlock = 2;
 	bg->mapBlock = 0;
-	bg->size = TEXTBG_SIZE_256x256;
+	bg->size = BgSize_T_256x256;
 	bg->colorMode = BG_COLOR_256;
 	bg->isSub = true;
 
@@ -96,12 +96,9 @@ void showTileSplashScreenSub(void * gfx, void * pal, void * map, int yAdjust)
 	updateBackground(bg);
 }
 
-int times = 0;
-
 u16 * showTileSplashScreenNoModeChg(void * gfx, void * pal, void * map,
 		bool fadeIn) {
 
-	
 	disableBg(BG_TEXT);
 	disableBg(BG_MAIN);
 	disableBg(BG_MID);
@@ -118,8 +115,6 @@ u16 * showTileSplashScreenNoModeChg(void * gfx, void * pal, void * map,
 	zeroMem((u32*)bg->mapData, 2048);
 	copyMem16(bg->mapData, map, SPLASH_SCREEN_SIZE); //this gets everything from the original GBA size of splash screens
 	updateBackground(bg);
-
-
 
 	if (fadeIn) {
 		fadeInSplash(1);
@@ -203,6 +198,7 @@ void showChiliBite(void * gfx, void * pal, void * map) {
 	initSoundSystem();
 
 	int frameCtr = 0;
+
 	while (!isKeyPress(KEY_START) && !isKeyPress(KEY_A) && (frameCtr
 			< CHILI_SCREEN_DELAY)) {
 		frameTick();
@@ -241,12 +237,12 @@ void showTextScreen(char ** lines) {
 }
 
 void setFadeBlack() {
-	BLEND_CR = BLEND_DST_BACKDROP | BLEND_ALPHA | BLEND_SRC_BG2;
-	BLEND_AB = 15<<8;
+	REG_BLDCNT = BLEND_DST_BACKDROP | BLEND_ALPHA | BLEND_SRC_BG2;
+	REG_BLDALPHA = 15<<8;
 }
 void setSubFadeBlack() {
-	SUB_BLEND_CR = BLEND_DST_BACKDROP | BLEND_ALPHA | BLEND_SRC_BG2;
-	SUB_BLEND_AB = 15<<8;
+	REG_BLDCNT_SUB = BLEND_DST_BACKDROP | BLEND_ALPHA | BLEND_SRC_BG2;
+	REG_BLDALPHA_SUB = 15<<8;
 }
 
 
@@ -258,18 +254,18 @@ void fadeOutBgScreen(int fadeSpeed, int bgToFade, bool both) {
 	}
 	if (both)
 	{
-		SUB_BLEND_CR = BLEND_DST_BACKDROP | BLEND_ALPHA | BLEND_BG_FRONT(1);
+		REG_BLDCNT_SUB = BLEND_DST_BACKDROP | BLEND_ALPHA | BLEND_BG_FRONT(1);
 	}
-	BLEND_CR = BLEND_DST_BACKDROP | BLEND_ALPHA | BLEND_BG_FRONT(bgToFade);
+	REG_BLDCNT = BLEND_DST_BACKDROP | BLEND_ALPHA | BLEND_BG_FRONT(bgToFade);
 	int i;
 	int j;
 	for (i = 15; i >= 0; i-=fadeSpeed) {
 		int bg = (15 - i) << 8;
 		if (both)
 		{
-			SUB_BLEND_AB = bg | i;
+			REG_BLDALPHA_SUB = bg | i;
 		}
-		BLEND_AB = bg | i;
+		REG_BLDALPHA = bg | i;
 
 		for (j = 0; j < tickCtr; j++) {
 			frameTick();
@@ -299,17 +295,17 @@ void fadeInSplashScreens(int fadeSpeed, bool both) {
 	}
 	if (both)
 	{
-		SUB_BLEND_CR = BLEND_DST_BACKDROP | BLEND_ALPHA | BLEND_SRC_BG2;
+		REG_BLDCNT_SUB = BLEND_DST_BACKDROP | BLEND_ALPHA | BLEND_SRC_BG2;
 	}
-	BLEND_CR = BLEND_DST_BACKDROP | BLEND_ALPHA | BLEND_SRC_BG2;
+	REG_BLDCNT = BLEND_DST_BACKDROP | BLEND_ALPHA | BLEND_SRC_BG2;
 	int i;
 	int j;
 	for (i = 0; i <= 15; i+=fadeSpeed) {
 		int bg = (15 - i) << 8;
-		BLEND_AB = bg | i;
+		REG_BLDALPHA = bg | i;
 		if (both)
 		{
-			SUB_BLEND_AB = bg | i;
+			REG_BLDALPHA_SUB = bg | i;
 		}
 
 		for (j = 0; j < tickCtr; j++) {
@@ -595,7 +591,7 @@ void updateMenuAnim(Bg * subBg, int frame)
 
 
 	//adjust alpha blend
-	BLEND_CR = BLEND_DST_BG2 | BLEND_ALPHA | BLEND_BG_FRONT(1);
+	REG_BLDCNT = BLEND_DST_BG2 | BLEND_ALPHA | BLEND_BG_FRONT(1);
 
 
 	if (frame > 70)
@@ -610,7 +606,7 @@ void updateMenuAnim(Bg * subBg, int frame)
 
 	}
 	int bg = (16 - blendLevel) << 8;
-	BLEND_AB = bg | blendLevel;
+	REG_BLDALPHA = bg | blendLevel;
 
 
 

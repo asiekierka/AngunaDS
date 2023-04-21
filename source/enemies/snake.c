@@ -4,7 +4,7 @@
 #include "../misc.h"
 #include "../characters.h"
 #include "multiSmall2Gfx.h"
-#include "portraits/snake_portrait.h"
+#include "enemies/portraits/snake_portrait.h"
 
 #define Frame(x) (void *)&(enemySnakeCharFrames[x])
 #define Anim(x) (void *)&(enemySnakeCharAnim[x])

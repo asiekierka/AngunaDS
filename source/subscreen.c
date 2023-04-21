@@ -271,7 +271,7 @@ void drawTopSubscreenFrame(int x1, int x2, int y1, int y2)
 	initBackground(layer1, BG_MID_NUM);
 	layer1->tileBlock = 2;
 	layer1->mapBlock = 25;
-	layer1->size = TEXTBG_SIZE_256x256;
+	layer1->size = BgSize_T_256x256;
 	layer1->colorMode = BG_COLOR_16;
 	layer1->isSub = false;
 	//turn it on to get everything setup on it, then turn
@@ -332,7 +332,7 @@ void drawSubscreenFrame(int x1, int x2, int y1, int y2)
 	initBackground(layer1, BG_MID_NUM);
 	layer1->tileBlock = 2;
 	layer1->mapBlock = 25;
-	layer1->size = TEXTBG_SIZE_256x256;
+	layer1->size = BgSize_T_256x256;
 	layer1->colorMode = BG_COLOR_16;
 	layer1->isSub = true;
 	//turn it on to get everything setup on it, then turn
@@ -396,7 +396,7 @@ void initTopSubscreen()
 	initBackground(layer1, BG_MID_NUM);
 	layer1->tileBlock = 2;
 	layer1->mapBlock = 25;
-	layer1->size = TEXTBG_SIZE_256x256;
+	layer1->size = BgSize_T_256x256;
 	layer1->colorMode = BG_COLOR_16;
 	layer1->isSub = false;
 	//turn it on to get everything setup on it, then turn
@@ -420,7 +420,7 @@ void initSubscreen()
 	initBackground(layer1, BG_MID_NUM);
 	layer1->tileBlock = 2;
 	layer1->mapBlock = 25;
-	layer1->size = TEXTBG_SIZE_256x256;
+	layer1->size = BgSize_T_256x256;
 	layer1->colorMode = BG_COLOR_16;
 	layer1->isSub = true;
 	//turn it on to get everything setup on it, then turn

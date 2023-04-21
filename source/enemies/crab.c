@@ -4,7 +4,7 @@
 #include "../misc.h"
 #include "../characters.h"
 #include "crabGfx.h"
-#include "portraits/crabBoss_portrait.h"
+#include "enemies/portraits/crabBoss_portrait.h"
 
 #define Frame(x) (void *)&(enemyCrabCharFrames[x])
 #define Anim(x) (void *)&(enemyCrabCharAnim[x])

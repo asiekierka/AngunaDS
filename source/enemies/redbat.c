@@ -4,7 +4,7 @@
 #include "slimeGfx.h"
 #include "../misc.h"
 #include "../characters.h"
-#include "portraits/bat_portrait.h"
+#include "enemies/portraits/bat_portrait.h"
 
 #define Frame(x) (void *)&(enemyRedBatCharFrames[x])
 #define Anim(x) (void *)&(enemyRedBatCharAnim[x])

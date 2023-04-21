@@ -4,7 +4,7 @@
 #include "multiSmall2Gfx.h"
 #include "../misc.h"
 #include "../characters.h"
-#include "portraits/spider_portrait.h"
+#include "enemies/portraits/spider_portrait.h"
 
 #define Frame(x) (void *)&(enemySpiderCharFrames[x])
 #define Anim(x) (void *)&(enemySpiderCharAnim[x])

@@ -16,6 +16,4 @@ void setDsGfxModeStandard();
  */
 void setDsGfxModeSplash();
 
-void checkLidSleep();
-
 #endif /*DSMISC_H_*/

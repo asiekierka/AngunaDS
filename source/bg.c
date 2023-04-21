@@ -243,7 +243,7 @@ bool initBackground(Bg* bg, int layer) {
 	bg->tileBlock = 0;
 	bg->mapBlock = 28;
 	bg->colorMode = BG_COLOR_256;
-	bg->size = TEXTBG_SIZE_256x256; //size of map
+	bg->size = BgSize_T_256x256; //size of map
 	bg->mosaic = 0; //not enabled
 	bg->x_scroll = 0; //scrolling variables
 	bg->y_scroll = 0;
@@ -260,8 +260,8 @@ bool initBackground(Bg* bg, int layer) {
 
 void enableBackground(Bg* bg) {
 
-	vuint16* bgControllers[] = { &BG0_CR, &BG1_CR, &BG2_CR, &BG3_CR,
-			&SUB_BG0_CR, &SUB_BG1_CR, &SUB_BG2_CR, &SUB_BG3_CR };
+	vuint16* bgControllers[] = { &REG_BG0CNT, &REG_BG1CNT, &REG_BG2CNT, &REG_BG3CNT,
+			&REG_BG0CNT_SUB, &REG_BG1CNT_SUB, &REG_BG2CNT_SUB, &REG_BG3CNT_SUB };
 
 	if (bg->isSub) {
 		bg->tileData = (u32*)BG_TILE_RAM_SUB(bg->tileBlock);
@@ -283,9 +283,9 @@ void enableBackground(Bg* bg) {
     };
 	
 
-    vuint32* reg = &DISPLAY_CR;
+    vuint32* reg = &REG_DISPCNT;
     if (bg->isSub)
-    reg = &SUB_DISPLAY_CR;
+    reg = &REG_DISPCNT_SUB;
     
     u32 value = bgActives[bg->number];
     
@@ -298,9 +298,9 @@ void disableBG(Bg * bg) {
 			DISPLAY_BG2_ACTIVE, DISPLAY_BG3_ACTIVE, 
     };
 
-    vuint32* reg = &DISPLAY_CR;
+    vuint32* reg = &REG_DISPCNT;
     if (bg->isSub)
-    reg = &SUB_DISPLAY_CR;
+    reg = &REG_DISPCNT_SUB;
     
     u32 value = bgActives[bg->number];
     
@@ -311,17 +311,17 @@ void disableBG(Bg * bg) {
 uint32 dispCntHolder;
 
 void hideBgs() {
-	dispCntHolder = DISPLAY_CR;
+	dispCntHolder = REG_DISPCNT;
 
-	DISPLAY_CR &= ~DISPLAY_BG0_ACTIVE;
-	DISPLAY_CR &= ~DISPLAY_BG1_ACTIVE;
-	DISPLAY_CR &= ~DISPLAY_BG2_ACTIVE;
-	DISPLAY_CR &= ~DISPLAY_BG3_ACTIVE;
+	REG_DISPCNT &= ~DISPLAY_BG0_ACTIVE;
+	REG_DISPCNT &= ~DISPLAY_BG1_ACTIVE;
+	REG_DISPCNT &= ~DISPLAY_BG2_ACTIVE;
+	REG_DISPCNT &= ~DISPLAY_BG3_ACTIVE;
 
 }
 
 void restoreBgs() {
-	DISPLAY_CR = dispCntHolder;
+	REG_DISPCNT = dispCntHolder;
 }
 
 void updateBackground(Bg* bg) {
@@ -338,10 +338,10 @@ void updateBackground(Bg* bg) {
 		bg->y_scroll += 256;
 	}
 
-	vuint16* bgXControllers[] = { &BG0_X0, &BG1_X0, &BG2_X0, &BG3_X0,
-			&SUB_BG0_X0, &SUB_BG1_X0, &SUB_BG2_X0, &SUB_BG3_X0 };
-	vuint16* bgYControllers[] = { &BG0_Y0, &BG1_Y0, &BG2_Y0, &BG3_Y0,
-			&SUB_BG0_Y0, &SUB_BG1_Y0, &SUB_BG2_Y0, &SUB_BG3_Y0 };
+	vuint16* bgXControllers[] = { &REG_BG0HOFS, &REG_BG1HOFS, &REG_BG2HOFS, &REG_BG3HOFS,
+			&REG_BG0HOFS_SUB, &REG_BG1HOFS_SUB, &REG_BG2HOFS_SUB, &REG_BG3HOFS_SUB };
+	vuint16* bgYControllers[] = { &REG_BG0VOFS, &REG_BG1VOFS, &REG_BG2VOFS, &REG_BG3VOFS,
+			&REG_BG0VOFS_SUB, &REG_BG1VOFS_SUB, &REG_BG2VOFS_SUB, &REG_BG3VOFS_SUB };
 
 	int bgRegisterNum = bg->number + (bg->isSub ? 4 : 0);
 
@@ -548,18 +548,18 @@ void writeOneTile(Bg * bg, LevelData * lvl, int x, int y, int tile) {
 }
 
 void disableBGMosaic() {
-	BG1_CR &= ~BG_MOSAIC_ON;
-	BG2_CR &= ~BG_MOSAIC_ON;
-	BG3_CR &= ~BG_MOSAIC_ON;
+	REG_BG1CNT &= ~BG_MOSAIC_ON;
+	REG_BG2CNT &= ~BG_MOSAIC_ON;
+	REG_BG3CNT &= ~BG_MOSAIC_ON;
 }
 
 void setBGMosaic(int mosaicLevel) {
 	mosaicLevel = limitRange(mosaicLevel, 0, 15);
-	BG1_CR |= BG_MOSAIC_ON;
-	BG2_CR |= BG_MOSAIC_ON;
-	BG3_CR |= BG_MOSAIC_ON;
+	REG_BG1CNT |= BG_MOSAIC_ON;
+	REG_BG2CNT |= BG_MOSAIC_ON;
+	REG_BG3CNT |= BG_MOSAIC_ON;
 
-	MOSAIC_CR = (mosaicLevel << 4) | mosaicLevel;
+	REG_MOSAIC = (mosaicLevel << 4) | mosaicLevel;
 
 }
 
@@ -567,22 +567,22 @@ void setBGMosaic(int mosaicLevel) {
  * enable a bg -- must pass in the actual value to write to the background register
  */
 void enableBg(int x) {
-	DISPLAY_CR = (DISPLAY_CR | (x));
+	REG_DISPCNT = (REG_DISPCNT | (x));
 }
 
 void enableSubBg(int x) {
-	SUB_DISPLAY_CR = (SUB_DISPLAY_CR | (x));
+	REG_DISPCNT_SUB = (REG_DISPCNT_SUB | (x));
 }
 
 /**
  * enable a bg -- must pass in the actual value to clear from the background register
  */
 void disableBg(int x) {
-	DISPLAY_CR = (DISPLAY_CR & ~(x));
+	REG_DISPCNT = (REG_DISPCNT & ~(x));
 }
 
 void disableSubBg(int x) {
-	SUB_DISPLAY_CR = (SUB_DISPLAY_CR & ~(x));
+	REG_DISPCNT_SUB = (REG_DISPCNT_SUB & ~(x));
 }
 
 void bgMosaicBlurIn(int framesPerLevel) {

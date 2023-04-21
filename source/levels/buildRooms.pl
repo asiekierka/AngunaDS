@@ -10,7 +10,7 @@ $mode = param("mode");
 ($zoneData,$junk) = split(/_/,$lvlId,2);
 $zoneData = "zone_".$zoneData;
 
-chdir ("levels");
+chdir ("source/levels");
 mkdir ("tmp");
 my $minimap = "0,0";
 
@@ -62,6 +62,9 @@ sub addDoor
 
 	return "";
 }
+
+`dos2unix $lvlId.dor`;
+`dos2unix $lvlId.pre`;
 
 open(DORIN, "<$lvlId.dor") or print "could not open $lvlId.dor (not necessarily a problem)\n";
 open(IN, "<$lvlId.pre") or die "could not open $lvlId.pre";
@@ -128,8 +131,8 @@ while(<IN>)
 {
 	chomp;
 	@parts = split(/: /);
-	$kw = $parts[0];
-	$body = $parts[1];
+	$kw = trim($parts[0]);
+	$body = trim($parts[1]);
 	if ($lvlId eq "ovr_0_0")
 	{
 		print "keyword: $kw\n";
@@ -208,6 +211,7 @@ while (<STDH>)
 
 print CFILE "\n\n\n";
 close STDH;
+`dos2unix $id.c.tmp`;
 open (MAP, "<$id.c.tmp") or die "could not open temporary version of $id.c ($id.c.tmp)";
 $hasFG = 0;
 while (<MAP>)
@@ -265,7 +269,7 @@ while (<MAP>)
 		
 		$line =~ s/;/*2;/g;
 	}
-	if ((m/.define LEVEL_level_.*_.* [0-9]*$/) && ($mode eq "16px"))
+	if ((m/.define LEVEL_level_.*_.* [0-9]*\s*$/) && ($mode eq "16px"))
 	{
 		chomp $line;
 		$line .= "*2\n";
@@ -280,18 +284,14 @@ $doorStruct = "";
 foreach(@doors)
 {
 	$door = $_;
-	$door = trim($door);
-	if (length($door) > 0)
-	{
-		($toLvl, $junk) = split(/,/, $door);
-		print CFILE "extern const LevelData level_$toLvl;\n";
-		if (!($door =~ m/STAIRS/)){
-			$door .= ",false";
-		}
-
-		$doorStruct .= "	{(void *)&level_$door },\n";
-		$doorctr++;
+	($toLvl, $junk) = split(/,/, $door);
+	print CFILE "extern const LevelData level_$toLvl;\n";
+	if (!($door =~ m/STAIRS/)){
+		$door .= ",false";
 	}
+
+	$doorStruct .= "	{(void *)&level_$door },\n";
+	$doorctr++;
 	
 }
 print CFILE "const DoorData ${id}_door_0[] = \n";
@@ -442,11 +442,4 @@ sub matchesRoom
 }
 
 
-sub trim($)
-{
-	my $string = shift;
-	$string =~ s/^\s+//;
-	$string =~ s/\s+$//;
-	return $string;
-}
-
+sub  trim { my $s = shift; $s =~ s/^\s+|\s+$//g; return $s };

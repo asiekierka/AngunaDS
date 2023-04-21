@@ -50,6 +50,7 @@ extern const unsigned int spritePalette[];
 
 int main()
 {
+	defaultExceptionHandler();
 
 	//initSoundSystem(); -- this is init'd during the chili bite intro
 	initMisc();
@@ -147,8 +148,6 @@ int main()
 		doDarkIfDark();
 
 		while(shouldContinueMainLoop()) {
-			//checkLidSleep();
-
 			processControls();
 			updateMainChar();
 

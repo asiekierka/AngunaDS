@@ -33,7 +33,7 @@ bool checkCharacterCollidesWithMC(CharacterStatus * character);
 void mcTakeHit(int dmg, int srcX, int srcY);
 CharacterStatus * getMainCharStatus();
 
-u16 * gfxToReload;
+extern u16 * gfxToReload;
 
 #define AXIS_X 2
 #define AXIS_Y 1

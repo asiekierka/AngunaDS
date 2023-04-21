@@ -4,7 +4,7 @@
 #include "multiSmall2Gfx.h"
 #include "../misc.h"
 #include "../characters.h"
-#include "portraits/flame_portrait.h"
+#include "enemies/portraits/flame_portrait.h"
 
 #define Frame(x) (void *)&(enemyWallHuggerCharFrames[x])
 #define Anim(x) (void *)&(enemyWallHuggerCharAnim[x])

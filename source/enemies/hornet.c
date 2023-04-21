@@ -4,7 +4,7 @@
 #include "../misc.h"
 #include "../characters.h"
 #include "multiSmall2Gfx.h"
-#include "portraits/hornet_portrait.h"
+#include "enemies/portraits/hornet_portrait.h"
 
 #define Frame(x) (void *)&(enemyHornetCharFrames[x])
 #define Anim(x) (void *)&(enemyHornetCharAnim[x])

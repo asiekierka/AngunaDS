@@ -5,7 +5,7 @@
 #include "../misc.h"
 #include "../characters.h"
 #include "slimeGfx.h"
-#include "portraits/zipper_portrait.h"
+#include "enemies/portraits/zipper_portrait.h"
 
 #define Frame(x) (void *)&(enemyZipperCharFrames[x])
 #define Anim(x) (void *)&(enemyZipperCharAnim[x])
