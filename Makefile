@@ -8,12 +8,10 @@ BLOCKSDSEXT	?= /opt/blocksds/external
 # User config
 # ===========
 
-NAME		:= template_combined
+NAME		:= anguna
 
-GAME_TITLE	:= Combined ARM7+ARM9 template
-GAME_SUBTITLE	:= Built with BlocksDS
-GAME_AUTHOR	:= github.com/blocksds/sdk
-GAME_ICON	:= icon.bmp
+GAME_FULL_TITLE	:= Anguna
+GAME_ICON	:= icon.png
 
 # DLDI and internal SD slot of DSi
 # --------------------------------
@@ -84,13 +82,6 @@ $(NITROFAT_IMG): $(NITROFATDIR)
 
 # Make the NDS ROM depend on the filesystem image only if it is needed
 $(ROM): $(NITROFAT_IMG)
-endif
-
-# Combine the title strings
-ifeq ($(strip $(GAME_SUBTITLE)),)
-    GAME_FULL_TITLE := $(GAME_TITLE);$(GAME_AUTHOR)
-else
-    GAME_FULL_TITLE := $(GAME_TITLE);$(GAME_SUBTITLE);$(GAME_AUTHOR)
 endif
 
 $(ROM): arm9 arm7

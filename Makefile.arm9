@@ -8,11 +8,11 @@ BLOCKSDSEXT	?= /opt/blocksds/external
 # Source code paths
 # -----------------
 
-SOURCEDIRS	:= source source/audio source/enemies source/gfx source/levels/zones
+SOURCEDIRS	:= source source/enemies source/gfx source/levels/zones
 INCLUDEDIRS	:= source build/arm9/source
 GFXDIRS		:=
 BINDIRS		:=
-AUDIODIRS	:=
+AUDIODIRS	:= audio
 
 # Defines passed to all files
 # ---------------------------
@@ -108,12 +108,12 @@ ASFLAGS		+= -x assembler-with-cpp $(DEFINES) $(ARCH) \
 		   -ffunction-sections -fdata-sections
 
 CFLAGS		+= -std=gnu11 $(WARNFLAGS) $(DEFINES) $(ARCH) \
-		   -mthumb -mthumb-interwork $(INCLUDEFLAGS) -g -O2 \
+		   -mthumb -mthumb-interwork $(INCLUDEFLAGS) -O0 \
 		   -ffunction-sections -fdata-sections \
 		   -fomit-frame-pointer
 
 CXXFLAGS	+= -std=gnu++14 $(WARNFLAGS) $(DEFINES) $(ARCH) \
-		   -mthumb -mthumb-interwork $(INCLUDEFLAGS) -g -O2 \
+		   -mthumb -mthumb-interwork $(INCLUDEFLAGS) -O0 \
 		   -ffunction-sections -fdata-sections \
 		   -fno-exceptions -fno-rtti \
 		   -fomit-frame-pointer

@@ -1,12 +1,5 @@
 -retesting dungeon 4
 
-
---BUGS
--add low power mode for lid closed
--better sound lib
-
-
-
 ---FIXED----
 -don't let enemies spawn right in front of a cave/stairs/door
 -using last potion still shows a 1

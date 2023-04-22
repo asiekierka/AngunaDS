@@ -249,7 +249,7 @@ void resetEnemy(Enemy * enemy)
 void initEnemySystem()
 {
 	int i;
-	for (i = 0; i <= maxEnemy; i++)
+	for (i = 0; i < MAX_ENEMIES; i++)
 	{
 		enemyList[i].status = null;
 		enemyList[i].enemyType = null;
