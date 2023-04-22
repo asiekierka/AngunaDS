@@ -10,9 +10,8 @@
 
 void playGameSfx(int effect)
 {
-	// TODO: This doesn't seem to work
-	/* mmLoadEffect(effect);
-	mmEffect(effect); */
+	mmLoadEffect(effect);
+	mmEffect(effect);
 }
 
 static int current_song = -1;
