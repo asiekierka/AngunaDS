@@ -113,9 +113,9 @@ int enemyWallHuggerFunc(Enemy * enemy, int func)
 
 const EnemyDatabaseDef enemy_wallHugger_db = 
 {
-	flame_portrait_Tiles,
-	flame_portrait_Pal,
-	flame_portrait_Map,
+	flame_portraitTiles,
+	flame_portraitPal,
+	flame_portraitMap,
 	"Will O Wisp",
 	"Eerie burning flame",
 	"Circles along",

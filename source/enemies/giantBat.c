@@ -166,9 +166,9 @@ int enemyGiantBatFunc(Enemy * enemy, int func)
 
 const EnemyDatabaseDef enemy_giantbat_db = 
 {
-	batBoss_portrait_Tiles,
-	batBoss_portrait_Pal,
-	batBoss_portrait_Map,
+	batBoss_portraitTiles,
+	batBoss_portraitPal,
+	batBoss_portraitMap,
 	"Giant Bat",
 	"A HUGE vampire bat",
 	"",

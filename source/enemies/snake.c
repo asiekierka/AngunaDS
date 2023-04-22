@@ -210,9 +210,9 @@ int enemySnakeFunc(Enemy * enemy, int func)
 
 const EnemyDatabaseDef enemy_snake_db = 
 {
-	snake_portrait_Tiles,
-	snake_portrait_Pal,
-	snake_portrait_Map,
+	snake_portraitTiles,
+	snake_portraitPal,
+	snake_portraitMap,
 	"Snake",
 	"Venomous Serpent",
 	"Wanders slowly, ",

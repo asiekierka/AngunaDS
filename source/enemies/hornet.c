@@ -130,9 +130,9 @@ int enemyHornetFunc(Enemy * enemy, int func)
 
 const EnemyDatabaseDef enemy_hornet_db = 
 {
-	hornet_portrait_Tiles,
-	hornet_portrait_Pal,
-	hornet_portrait_Map,
+	hornet_portraitTiles,
+	hornet_portraitPal,
+	hornet_portraitMap,
 	"Wasp",
 	"Overgrown stinging bug",
 	"Flies around",

@@ -154,9 +154,9 @@ int enemySpiderFunc(Enemy * enemy, int func)
 
 const EnemyDatabaseDef enemy_spider_db = 
 {
-	spider_portrait_Tiles,
-	spider_portrait_Pal,
-	spider_portrait_Map,
+	spider_portraitTiles,
+	spider_portraitPal,
+	spider_portraitMap,
 	"Spider",
 	"An overgrown spider",
 	"Venomous and hungry",

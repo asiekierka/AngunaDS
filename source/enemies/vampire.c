@@ -306,9 +306,9 @@ int enemyVampireFunc(Enemy * enemy, int func)
 
 const EnemyDatabaseDef enemy_vampire_db = 
 {
-	vampire_portrait_Tiles,
-	vampire_portrait_Pal,
-	vampire_portrait_Map,
+	vampire_portraitTiles,
+	vampire_portraitPal,
+	vampire_portraitMap,
 	"Vampire",
 	"Master of bats",
 	"Meanders slowly, ",
@@ -337,9 +337,9 @@ const EnemyType enemy_vampire_def =
 
 const EnemyDatabaseDef enemy_darkvampire_db = 
 {
-	vampire_portrait_Tiles,
-	vampire_portrait_Pal + 16,
-	vampire_portrait_Map,
+	vampire_portraitTiles,
+	vampire_portraitPal + 16,
+	vampire_portraitMap,
 	"Dark Vampire",
 	"Master of bats",
 	"Meanders quickly, ",

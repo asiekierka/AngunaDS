@@ -10,7 +10,7 @@ BLOCKSDSEXT	?= /opt/blocksds/external
 
 SOURCEDIRS	:= source source/enemies source/gfx source/levels/zones
 INCLUDEDIRS	:= source build/arm9/source
-GFXDIRS		:=
+GFXDIRS		:= source/enemies/portraits
 BINDIRS		:=
 AUDIODIRS	:= audio
 
@@ -219,34 +219,6 @@ $(SOUNDBANKDIR)/soundbank.c.o: $(SOUNDBANKDIR)/soundbank.h
 
 WINE=wine
 PERL=perl
-
-OBJS_WAVS		:= $(addprefix $(BUILDDIR)/,$(patsubst %.wav,%.wav.o, $(wildcard source/audio/wavs/*.wav)))
-HEADERS_WAVS		:= $(addprefix $(BUILDDIR)/,$(patsubst %.wav,%_wav.h, $(wildcard source/audio/wavs/*.wav)))
-
-OBJS			+= $(OBJS_WAVS)
-HEADERS_ASSETS		+= $(HEADERS_WAVS)
-
-$(BUILDDIR)/source/audio/wavs/%.wav.o $(BUILDDIR)/source/audio/wavs/%_wav.h : source/audio/wavs/%.wav
-	@echo "  BIN2C.9 $<"
-	@$(MKDIR) -p $(@D)
-	$(V)$(BLOCKSDS)/tools/bin2c/bin2c $< $(@D)
-	$(V)$(CC) $(CFLAGS) -MMD -MP -c -o $(BUILDDIR)/source/audio/wavs/$*.wav.o $(BUILDDIR)/source/audio/wavs/$*_wav.c
-
-OBJS_PORTRAITS		:= $(addprefix $(BUILDDIR)/,$(patsubst %.png,%_portrait.o, $(wildcard source/enemies/portraits/*.png)))
-HEADERS_PORTRAITS	:= $(addprefix $(BUILDDIR)/,$(patsubst %.png,%_portrait.h, $(wildcard source/enemies/portraits/*.png)))
-
-OBJS			+= $(OBJS_PORTRAITS)
-HEADERS_ASSETS		+= $(HEADERS_PORTRAITS)
-
-$(BUILDDIR)/source/enemies/portraits/%_portrait.o $(BUILDDIR)/source/enemies/portraits/%_portrait.h : source/enemies/portraits/%.png
-	@echo "  WINGIT  $<"
-	@$(MKDIR) -p $(@D)
-	$(V)$(WINE) source/tools/map/wingitCLI.exe -img $< \
-		-output $(BUILDDIR)/$(patsubst %.png,%_portrait,$<) \
-		-symbol $(patsubst source/enemies/portraits/%.png,%_portrait_,$<) \
-		-imgBpp 4 -metaWidth 1 -metaHeight 1 -palStart 0 -palEnd 63
-	$(V)$(CC) $(CFLAGS) -MMD -MP -c $(BUILDDIR)/$(patsubst %.png,%_portrait.c,$<) \
-		-o $(BUILDDIR)/$(patsubst %.png,%_portrait.o,$<)
 
 # These were beyond cleaning up...
 

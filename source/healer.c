@@ -26,7 +26,7 @@ void showHealerPanel()
 	hideHud();
 	initTopSubscreen();
 	playGameSfx(SFX_SHOW_SUBSCREEN);
-	drawPortrait((u16*)oldMan_portrait_Pal, (u16*) oldMan_portrait_Tiles, (u16*) oldMan_portrait_Map);
+	drawPortrait((u16*)oldMan_portraitPal, (u16*) oldMan_portraitTiles, (u16*) oldMan_portraitMap);
 	enableBg(BG_MID);
 	
 }

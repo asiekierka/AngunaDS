@@ -165,9 +165,9 @@ int enemyZipperFunc(Enemy * enemy, int func)
 
 const EnemyDatabaseDef enemy_zipper_db = 
 {
-	zipper_portrait_Tiles,
-	zipper_portrait_Pal,
-	zipper_portrait_Map,
+	zipper_portraitTiles,
+	zipper_portraitPal,
+	zipper_portraitMap,
 	"Green Slime",
 	"Slimy little green blob",
 	"Zips back and forth in ",

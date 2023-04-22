@@ -315,9 +315,9 @@ int enemyGhostFunc(Enemy * enemy, int func)
 
 const EnemyDatabaseDef enemy_ghost_db = 
 {
-	ghost_portrait_Tiles,
-	ghost_portrait_Pal,
-	ghost_portrait_Map,
+	ghost_portraitTiles,
+	ghost_portraitPal,
+	ghost_portraitMap,
 	"Ghost",
 	"Neither dead or alive",
 	"Appears and disappears",
@@ -372,9 +372,9 @@ int enemyAttackGhostFunc(Enemy * enemy, int func)
 
 const EnemyDatabaseDef enemy_attack_ghost_db = 
 {
-	ghost_portrait_Tiles,
-	ghost_portrait_Pal,
-	ghost_portrait_Map,
+	ghost_portraitTiles,
+	ghost_portraitPal,
+	ghost_portraitMap,
 	"Dark Ghost",
 	"Neither dead or alive",
 	"Appears and shoots",

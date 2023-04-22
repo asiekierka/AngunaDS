@@ -131,7 +131,7 @@ void hideShopPanel()
 void showShopIntro()
 {
 	showShopPanel();
-	drawPortrait((u16*)shopKeeper_portrait_Pal, (u16*) shopKeeper_portrait_Tiles, (u16*) shopKeeper_portrait_Map);
+	drawPortrait((u16*)shopKeeper_portraitPal, (u16*) shopKeeper_portraitTiles, (u16*) shopKeeper_portraitMap);
 	bool done = false;
 
 	writeText(SHOP_SS_X, SHOP_SS_Y - 4, "Items for sale!");

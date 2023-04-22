@@ -373,9 +373,9 @@ int enemySpitSlimeFunc(Enemy * enemy, int func)
 
 const EnemyDatabaseDef enemy_spit_slime_db = 
 {
-	slime_portrait_Tiles,
+	slime_portraitTiles,
 	 orange_slime_portraitPal,
-	slime_portrait_Map,
+	slime_portraitMap,
 	"Orange Slime",
 	"Gross orange blob",
 	"Spits blobs of goo.",
@@ -423,9 +423,9 @@ int enemyPurpleSlimeFunc(Enemy * enemy, int func)
 
 const EnemyDatabaseDef enemy_purpleSlime_db = 
 {
-	slime_portrait_Tiles,
-	slime_portrait_Pal + 32,
-	slime_portrait_Map,
+	slime_portraitTiles,
+	slime_portraitPal + 32,
+	slime_portraitMap,
 	"Purple Slime",
 	"Gross purple blob",
 	"Retreats while ",

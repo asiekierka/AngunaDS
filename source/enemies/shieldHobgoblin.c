@@ -365,9 +365,9 @@ int enemyShieldHobgoblinFunc(Enemy * enemy, int func)
 
 const EnemyDatabaseDef enemy_shieldHobgoblin_db = 
 {
-	shieldHobgoblin_portrait_Tiles,
-	shieldHobgoblin_portrait_Pal,
-	shieldHobgoblin_portrait_Map,
+	shieldHobgoblin_portraitTiles,
+	shieldHobgoblin_portraitPal,
+	shieldHobgoblin_portraitMap,
 	"Shield Hobgoblin",
 	"Carries a big shield",
 	"This guy can",

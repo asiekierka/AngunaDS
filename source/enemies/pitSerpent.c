@@ -459,9 +459,9 @@ int enemyPitSerpentFunc(Enemy * enemy, int func)
 
 const EnemyDatabaseDef enemy_pit_serpent_db = 
 {
-	crocky_portrait_Tiles,
-	crocky_portrait_Pal + 16,
-	crocky_portrait_Map,
+	crocky_portraitTiles,
+	crocky_portraitPal + 16,
+	crocky_portraitMap,
 	"Pit Serpent",
 	"Snake from the depths",
 	"Comes out of","pits and",

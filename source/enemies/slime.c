@@ -324,9 +324,9 @@ int enemySlimeFunc(Enemy * enemy, int func)
 
 const EnemyDatabaseDef enemy_slime_db = 
 {
-	slime_portrait_Tiles,
-	slime_portrait_Pal,
-	slime_portrait_Map,
+	slime_portraitTiles,
+	slime_portraitPal,
+	slime_portraitMap,
 	"Blue Slime",
 	"Slimy gooey blob",
 	"Slowly wanders around",
@@ -376,9 +376,9 @@ int enemyRedSlimeFunc(Enemy * enemy, int func)
 
 const EnemyDatabaseDef enemy_redSlime_db = 
 {
-	slime_portrait_Tiles,
-	slime_portrait_Pal + 16,
-	slime_portrait_Map,
+	slime_portraitTiles,
+	slime_portraitPal + 16,
+	slime_portraitMap,
 	"Red Slime",
 	"Slimy gooey blob",
 	"Multiplies when killed",

@@ -352,9 +352,9 @@ int enemyBossFunc(Enemy * enemy, int func)
 
 const EnemyDatabaseDef enemy_boss_db = 
 {
-	boss_portrait_Tiles,
-	boss_portrait_Pal,
-	boss_portrait_Map,
+	boss_portraitTiles,
+	boss_portraitPal,
+	boss_portraitMap,
 	"Dragon",
 	"Fire-Breathing beast",
 	"The boss of all",

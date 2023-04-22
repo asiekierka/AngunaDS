@@ -127,9 +127,9 @@ int enemyRedBatFunc(Enemy * enemy, int func)
 
 const EnemyDatabaseDef enemy_redbat_db = 
 {
-	bat_portrait_Tiles,
-	bat_portrait_Pal + 16,
-	bat_portrait_Map,
+	bat_portraitTiles,
+	bat_portraitPal + 16,
+	bat_portraitMap,
 	"Red Bat",
 	"An angrier vampire bat",
 	"Can fly over obstacles",

@@ -229,9 +229,9 @@ int enemyCrabFunc(Enemy * enemy, int func)
 
 const EnemyDatabaseDef enemy_crab_db = 
 {
-	crabBoss_portrait_Tiles,
-	crabBoss_portrait_Pal,
-	crabBoss_portrait_Map,
+	crabBoss_portraitTiles,
+	crabBoss_portraitPal,
+	crabBoss_portraitMap,
 	"Giant Enemy Crab",
 	"Causes Massive Damage",
 	"",

@@ -299,9 +299,9 @@ int enemyBigGhostFunc(Enemy * enemy, int func)
 
 const EnemyDatabaseDef enemy_big_ghost_db = 
 {
-	bigGhost_portrait_Tiles,
-	bigGhost_portrait_Pal,
-	bigGhost_portrait_Map,
+	bigGhost_portraitTiles,
+	bigGhost_portraitPal,
+	bigGhost_portraitMap,
 	"Big Ghost",
 	"Giant Ghost",
 	"Bigger and tougher",

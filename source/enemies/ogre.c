@@ -392,9 +392,9 @@ int enemyOgreFunc(Enemy * enemy, int func)
 
 const EnemyDatabaseDef enemy_ogre_db = 
 {
-	ogre_portrait_Tiles,
-	ogre_portrait_Pal,
-	ogre_portrait_Map,
+	ogre_portraitTiles,
+	ogre_portraitPal,
+	ogre_portraitMap,
 	"Green Toady",
 	"Dim-witted Man-Toad",
 	"Meanders slowly,",
@@ -423,9 +423,9 @@ const EnemyType enemy_ogre_def =
 
 const EnemyDatabaseDef enemy_redogre_db = 
 {
-	ogre_portrait_Tiles,
-	ogre_portrait_Pal + 16,
-	ogre_portrait_Map,
+	ogre_portraitTiles,
+	ogre_portraitPal + 16,
+	ogre_portraitMap,
 	"Red Toady",
 	"Angry Man-Toad",
 	"Not quite as stupid ",

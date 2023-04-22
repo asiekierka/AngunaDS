@@ -412,9 +412,9 @@ int enemySentryFunc(Enemy * enemy, int func)
 
 const EnemyDatabaseDef enemy_sentry_db = 
 {
-	sentry_portrait_Tiles,
-	sentry_portrait_Pal,
-	sentry_portrait_Map,
+	sentry_portraitTiles,
+	sentry_portraitPal,
+	sentry_portraitMap,
 	"Hobgoblin Sentry",
 	"Watches for the player",
 	"Keeps a keen eye",

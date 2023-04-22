@@ -203,9 +203,9 @@ int enemyCrockyHeadFunc(Enemy * enemy, int func);
 
 const EnemyDatabaseDef enemy_crocky_db = 
 {
-	crocky_portrait_Tiles,
-	crocky_portrait_Pal,
-	crocky_portrait_Map,
+	crocky_portraitTiles,
+	crocky_portraitPal,
+	crocky_portraitMap,
 	"FireCroc",
 	"Fire breathing Crocodile",
 	"Spits 3 fireballs",
