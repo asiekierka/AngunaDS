@@ -28,13 +28,13 @@
 
 ---------------------------------------------------------------------------------*/
 #include <nds.h>
-#include <dswifi7.h>
+// #include <dswifi7.h>
 #include <maxmod7.h>
 
 //---------------------------------------------------------------------------------
 void VblankHandler(void) {
 //---------------------------------------------------------------------------------
-	Wifi_Update();
+//	Wifi_Update();
 }
 
 
@@ -75,7 +75,7 @@ int main() {
 
 	SetYtrigger(80);
 
-	installWifiFIFO();
+	// installWifiFIFO();
 	installSoundFIFO();
 
 	installSystemFIFO();
