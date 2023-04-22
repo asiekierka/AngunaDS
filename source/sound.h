@@ -24,11 +24,7 @@
 #define MUSIC_DUNGEON MOD_DUNGEON
 
 void playMusic(int song);
-
-void initSoundSystem();
-void soundWorker();
-void soundWorkerVBlank();
-
 void playGameSfx(int effect);
+void initSoundSystem();
 
 #endif

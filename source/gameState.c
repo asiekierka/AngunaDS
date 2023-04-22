@@ -1,5 +1,6 @@
 #include <stdint.h>
 #include <fat.h>
+#include <filesystem.h>
 #include <stdio.h>
 
 #include "gameState.h"
@@ -70,6 +71,7 @@ bool canSave = false;
 void initSaveSystem()
 {
 	fatInitDefault();
+	nitroFSInit(NULL);
 }
 
 void setCurrentSaveGameSlot(int saveSlot)

@@ -24,7 +24,7 @@ SDIMAGE		:= image.bin
 # Source code paths
 # -----------------
 
-NITROFATDIR	:=
+NITROFATDIR	:= nitrofs
 
 # Tools
 # -----

@@ -136,7 +136,8 @@ HEADERS_ASSETS	:= $(patsubst %.bin,%_bin.h,$(addprefix $(BUILDDIR)/,$(SOURCES_BI
 		   $(patsubst %.png,%.h,$(addprefix $(BUILDDIR)/,$(SOURCES_PNG)))
 
 ifneq ($(SOURCES_AUDIO),)
-    OBJS_ASSETS		+= $(SOUNDBANKDIR)/soundbank.c.o
+    #OBJS_ASSETS		+= $(SOUNDBANKDIR)/soundbank.c.o
+    HEADERS_ASSETS	+= nitrofs/soundbank.bin
     HEADERS_ASSETS	+= $(SOUNDBANKDIR)/soundbank.h
 endif
 
@@ -200,11 +201,15 @@ $(BUILDDIR)/%.png.o $(BUILDDIR)/%.h : %.png %.grit
 	$(V)$(CC) $(CFLAGS) -MMD -MP -c -o $(BUILDDIR)/$*.png.o $(BUILDDIR)/$*.c
 	$(V)touch $(BUILDDIR)/$*.png.o $(BUILDDIR)/$*.h
 
-$(SOUNDBANKDIR)/soundbank.h: $(SOURCES_AUDIO)
+$(SOUNDBANKDIR)/soundbank.bin $(SOUNDBANKDIR)/soundbank.h: $(SOURCES_AUDIO)
 	@echo "  MMUTIL  $^"
 	@$(MKDIR) -p $(@D)
 	@$(BLOCKSDS)/tools/mmutil/mmutil $^ -d \
 		-o$(SOUNDBANKDIR)/soundbank.bin -h$(SOUNDBANKDIR)/soundbank.h
+
+nitrofs/soundbank.bin: $(SOUNDBANKDIR)/soundbank.bin
+	@$(MKDIR) -p $(@D)
+	@cp $< $@
 
 $(SOUNDBANKDIR)/soundbank.c.o: $(SOUNDBANKDIR)/soundbank.h
 	@echo "  BIN2C   soundbank.bin"

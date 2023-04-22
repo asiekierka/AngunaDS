@@ -6,18 +6,31 @@
 #include "sound.h"
 
 #include "soundbank.h"
-#include "soundbank_bin.h"
+
+static comutex_t mmMutex;
+
+int playGameSfxThread(void *arg)
+{
+	int effect = (u32) arg;
+	if (!comutex_try_acquire(&mmMutex)) return 0;
+	mmLoadEffect(effect);
+	mmEffect(effect);
+	comutex_release(&mmMutex);
+	return 0;
+}
 
 void playGameSfx(int effect)
 {
-	mmLoadEffect(effect);
-	mmEffect(effect);
+	cothread_create(playGameSfxThread, (void*)effect, 0, COTHREAD_DETACHED);
+	cothread_yield();
 }
 
 static int current_song = -1;
 
-void playMusic(int song)
+int playMusicThread(void *arg)
 {
+	int song = (u32) arg;
+	comutex_acquire(&mmMutex);
 	if (song != current_song)
 	{
 		if (current_song >= 0)
@@ -29,19 +42,20 @@ void playMusic(int song)
 		mmStart(song, MM_PLAY_LOOP);
 		current_song = song;
 	}
+	comutex_release(&mmMutex);
+	return 0;
+}
+
+void playMusic(int song)
+{
+	cothread_create(playMusicThread, (void*)song, 0, COTHREAD_DETACHED);
+	cothread_yield();
 }
 
 void initSoundSystem()
 {
-	mmInitDefaultMem((mm_addr) soundbank_bin);
+	mmInitDefault("nitro:/soundbank.bin");
+	//mmInitDefaultMem((mm_addr) soundbank_bin);
 	mmSelectMode(MM_MODE_A);
+	comutex_init(&mmMutex);
 }
-
-void soundWorkerVBlank()
-{
-}
-
-void soundWorker()
-{
-}
-

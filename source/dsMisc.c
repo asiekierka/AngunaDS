@@ -35,7 +35,7 @@ void initDsVideo()
 
 void dsFrameTick()
 {
-	swiWaitForVBlank();
+	cothread_yield_irq(IRQ_VBLANK);
 	scanKeys();
 }
 
