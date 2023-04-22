@@ -87,12 +87,12 @@ void showTileSplashScreenSub(void * gfx, void * pal, void * map, int yAdjust)
 	bg->colorMode = BG_COLOR_256;
 	bg->isSub = true;
 
+	initBackgroundPointers(bg);
+	//loadBGTiles(bg, (u32*)gfx, 2024);
+	decompress(gfx, bg->tileData, LZ77Vram);
 	enableBackground(bg);
-	loadBGTiles(bg, (u32*)gfx, 2024);
 
-	//zeroMem((u32*)bg->mapData, 256);
 	copyMem16(bg->mapData, map, SPLASH_SCREEN_SIZE + 1024);
-	//zeroMem((u32*)(bg->mapData + SPLASH_SCREEN_SIZE), 600);
 	updateBackground(bg);
 }
 

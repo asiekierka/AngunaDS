@@ -48,6 +48,7 @@ typedef u16(*TilePaletteApplierFunction)(LevelData *, int);
 
 
 #ifndef BG_C
+extern void initBackgroundPointers(Bg* bg);
 extern void enableBackground(Bg* bg);
 extern void updateBackground(Bg* bg);
 extern bool initBackground(Bg* bg, int layer);

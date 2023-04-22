@@ -10,7 +10,7 @@ BLOCKSDSEXT	?= /opt/blocksds/external
 
 SOURCEDIRS	:= source source/enemies source/gfx source/levels/zones
 INCLUDEDIRS	:= source build/arm9/source
-GFXDIRS		:= source/enemies/portraits
+GFXDIRS		:= source/enemies/portraits source/gfx
 BINDIRS		:=
 AUDIODIRS	:= audio
 
@@ -59,11 +59,11 @@ endif
 # ------------
 
 ifneq ($(BINDIRS),)
-    SOURCES_BIN	:= $(shell find -L $(BINDIRS) -name "*.bin")
+    SOURCES_BIN	:= $(shell find -L $(BINDIRS) -maxdepth 1 -name "*.bin")
     INCLUDEDIRS	+= $(addprefix $(BUILDDIR)/,$(BINDIRS))
 endif
 ifneq ($(GFXDIRS),)
-    SOURCES_PNG	:= $(shell find -L $(GFXDIRS) -name "*.png")
+    SOURCES_PNG	:= $(shell find -L $(GFXDIRS) -maxdepth 1 -name "*.png")
     INCLUDEDIRS	+= $(addprefix $(BUILDDIR)/,$(GFXDIRS))
 endif
 ifneq ($(AUDIODIRS),)

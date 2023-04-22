@@ -258,11 +258,7 @@ bool initBackground(Bg* bg, int layer) {
 //	return (u16 *)ScreenBaseBlock(bgNum);
 //}
 
-void enableBackground(Bg* bg) {
-
-	vuint16* bgControllers[] = { &REG_BG0CNT, &REG_BG1CNT, &REG_BG2CNT, &REG_BG3CNT,
-			&REG_BG0CNT_SUB, &REG_BG1CNT_SUB, &REG_BG2CNT_SUB, &REG_BG3CNT_SUB };
-
+void initBackgroundPointers(Bg* bg) {
 	if (bg->isSub) {
 		bg->tileData = (u32*)BG_TILE_RAM_SUB(bg->tileBlock);
 		bg->mapData = (u16*)BG_MAP_RAM_SUB(bg->mapBlock);
@@ -270,6 +266,13 @@ void enableBackground(Bg* bg) {
 		bg->tileData = (u32*)BG_TILE_RAM(bg->tileBlock);
 		bg->mapData = (u16*)BG_MAP_RAM(bg->mapBlock);
 	}
+}
+
+void enableBackground(Bg* bg) {
+	initBackgroundPointers(bg);
+
+	vuint16* bgControllers[] = { &REG_BG0CNT, &REG_BG1CNT, &REG_BG2CNT, &REG_BG3CNT,
+			&REG_BG0CNT_SUB, &REG_BG1CNT_SUB, &REG_BG2CNT_SUB, &REG_BG3CNT_SUB };
 
 	u16 temp= BG_TILE_BASE(bg->tileBlock) | BG_MAP_BASE(bg->mapBlock)
 			| bg->size | bg->colorMode | bg->priority;// | bg->mosaic | bg->priority;
