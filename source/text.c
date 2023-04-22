@@ -87,15 +87,6 @@ void writeLinesSubPos(int x, int y, char ** lines)
 }
 
 
-void drawChar(u16 x, u16 y, char ch)
-{
-}
-
-void drawString(u16 x, u16 y, char * ch)
-{
-}
-
-
 //////////////////////Globals////////////////////////
 #define SPACE 0x00
 

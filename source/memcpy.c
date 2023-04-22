@@ -4,7 +4,8 @@
 
 void copyMem16(u16* dest, u16* src, int length) {
 	//dmaCopyHalfWords(3, src, dest, length * 2);
-	ndscpy(src, dest, length * 2);
+	//ndscpy(src, dest, length * 2);
+	memcpy(dest, src, length * 2);
 }
 
 
@@ -31,7 +32,8 @@ void memcpy32(void *dst, const void *src, int wdcount)
 
 void copyMem32(u32* dest, u32* src, int length) {
 	//memcpy32((void *)dest, (const void *) src, length);
-	ndscpy(src, dest, length * 4);
+	//ndscpy(src, dest, length * 4);
+	memcpy(dest, src, length * 4);
 }
 
 

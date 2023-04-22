@@ -5,7 +5,7 @@
 #define MINIMAP_ARRAY_SIZE 35
 
 
-const typedef enum 
+typedef enum
 {
 	PIN_TREASURE_CAVE,
 	PIN_SHOP_1,

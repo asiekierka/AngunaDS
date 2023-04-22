@@ -149,7 +149,6 @@ Sprite * getSpriteWithOwner(Sprite * lastPointer, CharacterStatus * owner) {
 	//we pass in lastPointer here so we can be lazy about getting a sprite.
 	//if we aren't sure if the character has one, just go ahead and call it again
 
-
 	if (lastPointer != null) {
 		return lastPointer;
 	}
@@ -194,7 +193,7 @@ Sprite * getSpriteWithOwner(Sprite * lastPointer, CharacterStatus * owner) {
 	return result;
 }
 
-//characters will often need multiple sprites.  
+//characters will often need multiple sprites.
 //This lets them get them all in a batch
 void getMultipleSprites(SpriteList listOfSprites, int numToGet) {
 	getMultipleSpritesWithOwner(listOfSprites, numToGet, null);

@@ -64,7 +64,7 @@ Enemy * createNewEnemyWithSlot(EnemyType * enemyType, int x, int y, Enemy * enem
 	newEnemy->statePointer = null;
 
 	newEnemy->trapped = 0;
-	
+
 	//reserve the sprites for the new enemy
 	getMultipleSpritesWithOwner(&(enemySprites[maxSpriteList]), enemyType->numSprites, newEnemy->status);
 	if (enemyType->numSprites > 10)
@@ -78,8 +78,6 @@ Enemy * createNewEnemyWithSlot(EnemyType * enemyType, int x, int y, Enemy * enem
 	newEnemy->status->faded = false;
 	maxSpriteList += enemyType->numSprites;
 
-	char * name = enemy->enemyType->databaseDef->name;
-
 	//call the enemy's custom update function
 	//gotta be careful with this one, will crash the game if not setup correctly....
 	//also, the enemy init function MUST initialize the sprite animations
@@ -87,7 +85,7 @@ Enemy * createNewEnemyWithSlot(EnemyType * enemyType, int x, int y, Enemy * enem
 
 	if (newEnemy->status->listSize > 10)
 	{
-		ASSERT(false, name);
+		ASSERT(false, enemy->enemyType->databaseDef->name);
 	}
 
 	//set them active, and let them go play!
@@ -96,13 +94,12 @@ Enemy * createNewEnemyWithSlot(EnemyType * enemyType, int x, int y, Enemy * enem
 
 	int maxTries = 5;
 
-
 	if ((x == ENEMY_RANDOM_LOCATION) || (y == ENEMY_RANDOM_LOCATION))
 	{
 		int tries = 0;
 		bool loop = true;
-		
-		while (loop) 
+
+		while (loop)
 		{
 			newEnemy->status->x = dice(20,(level->width * 8) - 20);
 			newEnemy->status->y = dice(20,(level->height * 8) - 20);
@@ -128,13 +125,9 @@ Enemy * createNewEnemyWithSlot(EnemyType * enemyType, int x, int y, Enemy * enem
 			resetEnemy(enemy);
 		}
 
-		
 	}
 
-
-
 	return newEnemy;
-	
 }
 
 Enemy * createNewEnemy(EnemyType * enemyType, int x, int y, int itemDrop, int special)
@@ -256,7 +249,7 @@ void initEnemySystem()
 		enemyList[i].active = false;
 	}
 	maxEnemy = -1;
-	maxSpriteList = -1;
+	maxSpriteList = 0;
 }
 
 void resetEnemies()
@@ -268,8 +261,7 @@ void resetEnemies()
 		resetEnemy(&(enemyList[i]));
 	}
 	maxEnemy = -1;
-	maxSpriteList = -1;
-	
+	maxSpriteList = 0;
 }
 
 void killAllActualEnemies()
@@ -765,7 +757,7 @@ int numEnemiesAlive()
 
 bool isActualEnemy(Enemy * enemy)
 {
-	return (enemy->active && enemy->enemyType->isEnemy);
+	return (enemy != null && enemy->active && enemy->enemyType->isEnemy);
 }
 
 int findActualTileFromEnemyTile(Enemy * enemy, int tile)

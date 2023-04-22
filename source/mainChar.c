@@ -78,8 +78,8 @@
 
 #ifndef START_ITEM_NBR
 #define START_ITEM_NBR 0
-#define START_ITEMS {};
-#define START_ITEM_QTY {};
+#define START_ITEMS {0};
+#define START_ITEM_QTY {0};
 #endif
 
 #define LIFE_UPS 11 

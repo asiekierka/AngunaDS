@@ -26,7 +26,7 @@
 #include "minimap.h"
 #include "platform.h"
 #include "input.h"
-
+#include "darkness.h"
 
 #include "config.h"
 
